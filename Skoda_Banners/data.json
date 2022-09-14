@@ -1,0 +1,80 @@
+{
+	"Width": 300,
+	"Height": 250,
+
+	"Static_Pause_Time": 7,
+	"OtherSizes": "300x250, 300x600, 160x600, 120x600, 728x90",
+
+	// Frame 1
+
+	"CDO_1324_VAM_Offsite_Bg_Image":{
+		"VariableType": "Image",
+		"Value": "Kamiq-300X250.jpg",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Model_Eyebrow_01": {
+		"VariableType": "Text",
+		"Value": "ŠKODA",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Model_Heading_01": {
+		"VariableType": "Text",
+		"Value": "KAMIQ",
+		"Metadata": {}
+	},
+	
+	"CDO_1324_VAM_Offsite_Model_Subheading_01": {
+		"VariableType": "Text",
+		"Value": "PARE POUR LE QUOTIDIEN",
+		"Metadata": {}
+	},
+
+	// Frame 2
+
+	"CDO_1324_VAM_Offsite_Emission_Image":{
+		"VariableType": "Image",
+		"Value": "emissions_kamiq.png",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Emission_TandC_01": {
+		"VariableType": "Text",
+		"Value": "Penser a covoiturer. #SeDeplacerMoinsPolluer",
+		"Metadata": {}
+	},
+
+	// Frame 3
+
+	"CDO_1324_VAM_Offsite_Model_Eyebrow_02": {
+		"VariableType": "Text",
+		"Value": "À PARTIE DE",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Model_Heading_02": {
+		"VariableType": "Text",
+		"Value": "179€/MOIS<sub>*</sub>",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Model_Subheading_02": {
+		"VariableType": "Text",
+		"Value": "AVEC APPORT",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Emission_TandC_02": {
+		"VariableType": "Text",
+		"Value": "*Voir conditions sure skoda.fr.",
+		"Metadata": {}
+	},
+
+	"CDO_1324_VAM_Offsite_Post_CTA_Text": {
+		"VariableType": "Text",
+		"Value": "DÉCOUVREZ-LE >",
+		"Metadata": {}
+	}
+
+}
