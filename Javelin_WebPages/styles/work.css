@@ -1,0 +1,655 @@
+html,
+body {
+    font-family: sofia-pro, century-gothic, Helvetica, Arial, san-serif;
+    max-width: 2500px;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 92px;
+    line-height: 94px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 24x;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.text-red {
+    color: #FF4B4B;
+}
+
+.row {
+    margin: 0
+}
+
+.p-4 {
+    padding: 40px !important;
+}
+
+.bg-black {
+    background-color: #0D0D0E;
+}
+
+.container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.artboard {
+    height: 100vh;
+    min-height: 350px;
+    background: url('../images/artboard.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clientsPic {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.clientsPic div {
+    max-width: 275px;
+    margin: 30px 5px;
+}
+
+#caseStudiesBox {
+    padding: 40px 40px 250px 40px;
+}
+
+.caseInfo {
+    max-width: 400px;
+    padding: 5% 0 3% 16%;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+.caseInfo p {
+    margin: 40px 0;
+}
+
+.caseStudyPic {
+    position: relative;
+    transform: skew(0deg, 5deg);
+}
+
+.caseBlock {
+    width: 665px;
+    height: 630px;
+}
+
+.caseBlock:nth-child(2) {
+    margin-left: 30px;
+}
+
+.caseStudies {
+    margin-bottom: 70px;
+}
+
+.caseStudies.one {
+    -webkit-transform: rotate(-20.5deg) skew(-16deg) translate(6px);
+        -ms-transform: rotate(-20.5deg) skew(-16deg) translate(6px);
+            transform: rotate(-20.5deg) skew(-16deg) translate(6px);
+}
+.caseStudies.two {
+    -webkit-transform: rotate(-20.5deg) skew(-16deg) translate(6px);
+        -ms-transform: rotate(-20.5deg) skew(-16deg) translate(6px);
+            transform: rotate(-20.5deg) skew(-16deg) translate(6px);
+}
+.caseStudies.three {
+    -webkit-transform: rotate(-20.5deg) skew(-16deg) translate(13px);
+        -ms-transform: rotate(-20.5deg) skew(-16deg) translate(13px);
+            transform: rotate(-20.5deg) skew(-16deg) translate(13px);
+}
+
+.caseBlock {
+    -webkit-transform: skew(-5deg);
+        -ms-transform: skew(-5deg);
+            transform: skew(-5deg);
+    overflow: hidden;
+}
+
+.caseStudies.three .caseBlock {
+    -webkit-transform: skew(-5deg) translate(-7px);
+        -ms-transform: skew(-5deg) translate(-7px);
+            transform: skew(-5deg) translate(-7px);
+}
+
+.caseStudyPic .caseStudy {
+    -webkit-transform: rotate(17deg) skew(17deg);
+    -ms-transform: rotate(17deg) skew(17deg);
+    transform: rotate(17deg) skew(17deg);
+}
+
+.caseStudyPic .caseStudy {
+    width: 110%;
+    height: 150%;
+    position: absolute;
+    top: -25%;
+    left: -5%;
+}
+
+.caseStudy:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    -webkit-transform: translate(98%, 72%);
+        -ms-transform: translate(98%, 72%);
+            transform: translate(98%, 72%);
+    -webkit-transition: opacity 0.36s ease-out;
+    -o-transition: opacity 0.36s ease-out;
+    transition: opacity 0.36s ease-out;
+}
+
+.csContent {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    -webkit-transform: skew(21deg) rotate(20.5deg);
+    -ms-transform: skew(21deg) rotate(20.5deg);
+    transform: skew(13.5deg) rotate(15deg);
+    padding: 20px;
+    max-width: 410px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.36s ease-in-out;
+    -o-transition: opacity 0.36s ease-in-out;
+    transition: opacity 0.36s ease-in-out;
+}
+
+.csContent h2 {
+    margin-bottom: 15px;
+}
+
+.csContent h3,
+.csContent p {
+    padding: 10px 5px
+}
+
+.caseStudyPic:hover .caseStudy:before {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    -ms-transform: translate(-50%, -40%);
+    -webkit-transition: -webkit-transform 0.36s ease;
+    transition: -webkit-transform 0.36s ease;
+    -o-transition: transform 0.36s ease;
+    transition: transform 0.36s ease;
+    transition: transform 0.36s ease, -webkit-transform 0.36s ease;
+}
+
+.caseStudyPic:hover .csContent {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.footer {
+    padding-bottom: 70px;
+}
+
+.logoBlock {
+    margin-top: -125px
+}
+@media (min-width: 2223px) and (max-width: 2225px) {
+    .caseStudy::before {
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+    }
+    
+    .csContent {
+        opacity: 1;
+    }
+}
+@media (min-width: 1667px) and (max-width: 1668px) {
+    .caseStudy::before {
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+    }
+    
+    .csContent {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1445px) {
+    .caseBlock {
+        width: 595px;
+        height: 620px;
+    }
+}
+@media (min-width: 1365px) and (max-width: 1366px) {
+    .caseStudy::before {
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+    }
+    
+    .csContent {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1300px) {
+    .caseBlock {
+        width: 520px;
+        height: 540px;
+    }
+
+    .caseStudies {
+        margin-bottom: 65px;
+    }
+
+    #caseStudiesBox {
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .caseBlock {
+        width: 455px;
+        height: 480px;
+    }
+
+    .caseInfo {
+        max-width: 390px;
+        padding: 70px 0 20px 100px;
+        padding: 5% 0 3% 12%;
+    }
+}
+@media (min-width: 1110px) and (max-width: 1112px){
+    .caseStudy::before {
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+    }
+    
+    .csContent {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1024px) {
+    .clientsPic div:last-child {
+        display: none !important;
+    }
+
+    .clientsPic.p-4 {
+        padding: 40px 0 !important;
+    }
+
+    .clientsPic div {
+        max-width: 330px;
+    }
+
+    .caseInfo {
+        padding: 5% 0 10% 12%;
+    }
+
+    .caseBlock {
+        width: 435px;
+        height: 465px;
+    }
+
+    .caseBlock:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .caseStudies {
+        margin-bottom: 45px;
+    }
+
+    .csContent h2 {
+        font-size: 42px
+    }
+
+    .csContent h3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .csContent h3,
+    .csContent p {
+        padding: 10px 5px
+    }
+
+    .csContent {
+        top: 27%;
+        max-width: 320px
+    }
+
+    .caseStudy::before {
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+    }
+
+    .csContent {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .caseStudies.one {
+        -webkit-transform: rotate(-20deg) skew(-15.5deg) translate(6px);
+            -ms-transform: rotate(-20deg) skew(-15.5deg) translate(6px);
+                transform: rotate(-20deg) skew(-15.5deg) translate(6px);
+    }
+    .caseStudies.two {
+        -webkit-transform: rotate(-20deg) skew(-15.5deg) translate(6px);
+            -ms-transform: rotate(-20deg) skew(-15.5deg) translate(6px);
+                transform: rotate(-20deg) skew(-15.5deg) translate(6px);
+    }
+    .caseStudies.three {
+        -webkit-transform: rotate(-20deg) skew(-15.5deg) translate(12px);
+            -ms-transform: rotate(-20deg) skew(-15.5deg) translate(12px);
+                transform: rotate(-20deg) skew(-15.5deg) translate(12px);
+    }
+
+    .caseBlock {
+        width: 335px;
+        height: 390px;
+    }
+
+    .csContent h2 {
+        font-size: 34px
+    }
+
+    .csContent h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .csContent h3,
+    .csContent p {
+        padding: 10px 5px
+    }
+
+    .csContent {
+        top: 22%;
+        max-width: 250px
+    }
+}
+
+@media screen and (max-width:767px) {
+    h1 {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 17px;
+        line-height: 22x;
+    }
+
+    #caseStudiesBox {
+        padding: 0px 0 120px;
+    }
+
+    .caseInfo {
+        padding: 40px 40px 100px
+    }
+
+    .clientsPic div {
+        max-width: 210px;
+        margin: 30px 15px;
+    }
+
+    .clientsPic.p-4 {
+        padding: 25px 0 !important
+    }
+
+    .caseInfo p {
+        margin: 20px 0;
+    }
+
+    .caseBlock {
+        width: 285px;
+        height: 340px;
+    }
+
+    .caseStudies {
+        margin-bottom: 35px;
+    }
+
+    .csContent {
+        top: 17%
+    }
+
+   
+    .logoBlock {
+        margin-top: -85px;
+    }
+
+    .footer {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        height: unset;
+        min-height: unset;
+    }
+
+    .artboard {
+        height: 250px;
+        min-height: 250px;
+    }
+    .caseInfo {
+        max-width: 480px;
+        padding: 40px 40px 130px;
+    }
+
+    .clientsPic div {
+        max-width: 130px;
+    }
+
+    .clientsPic div img {
+        width: 80%
+    }
+
+    .caseStudies.one,
+    .caseStudies.two,
+    .caseStudies.three {
+        -webkit-transform: rotate(-20.5deg) skew(-16deg);
+            -ms-transform: rotate(-20.5deg) skew(-16deg);
+                transform: rotate(-20.5deg) skew(-16deg)
+    }
+
+    .caseBlock {
+        width: 500px;
+        height: 500px;
+        margin-bottom: 15px;
+    }
+
+    .caseBlock:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .caseStudies {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-flow: wrap-reverse;
+                flex-flow: wrap-reverse;
+        margin-bottom: 70px;
+    }
+
+    .caseBlock:first-child,
+    .caseStudies.three .caseBlock:first-child {
+        -webkit-transform: skew(-5deg) translate(-20px);
+            -ms-transform: skew(-5deg) translate(-20px);
+                transform: skew(-5deg) translate(-20px);
+    }
+
+    .caseBlock:last-child,
+    .caseStudies.three .caseBlock:last-child {
+        -webkit-transform: skew(-5deg) translate(25px);
+            -ms-transform: skew(-5deg) translate(25px);
+                transform: skew(-5deg) translate(25px);
+    }
+
+    .csContent h2 {
+        font-size: 46px
+    }
+
+    .csContent h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .csContent h3,
+    .csContent p {
+        padding: 10px 5px
+    }
+
+    .csContent {
+        top: 27%;
+        max-width: 360px
+    }
+}
+
+@media screen and (max-width:468px) {
+    .caseInfo {
+        max-width: 480px;
+        padding: 40px 40px 100px;
+    }
+
+    .caseStudies.one,
+    .caseStudies.two,
+    .caseStudies.three {
+        -webkit-transform: rotate(-20.5deg) skew(-16deg) translate(-53px);
+            -ms-transform: rotate(-20.5deg) skew(-16deg) translate(-53px);
+                transform: rotate(-20.5deg) skew(-16deg) translate(-53px);
+        width: 120%;
+    }
+
+    .caseBlock {
+        margin-bottom: 10px;
+    }
+
+    .csContent h2 {
+        font-size: 40px
+    }
+
+    .csContent h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .csContent h3,
+    .csContent p {
+        padding: 10px 5px
+    }
+
+    .csContent {
+        top: 25%;
+        max-width: 300px
+    }
+}
+
+@media screen and (max-width:390px) {
+    .caseInfo {
+        padding-bottom: 90px
+    }
+
+    .caseBlock {
+        width: 440px;
+        height: 440px;
+    }
+
+    .clientsPic div {
+        max-width: 90px;
+    }
+
+    .clientsPic div img {
+        width: 80%
+    }
+
+    .caseStudies {
+        margin-bottom: 60px;
+    }
+
+    .csContent {
+        top: 22%;
+        max-width: 250px;
+        left: 50px
+    }
+
+    .csContent h2 {
+        font-size: 34px
+    }
+
+    .csContent h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .csContent h3,
+    .csContent p {
+        padding: 10px 5px
+    }
+}

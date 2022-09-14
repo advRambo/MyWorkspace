@@ -1,0 +1,466 @@
+html,
+body {
+    font-family: sofia-pro, century-gothic, Helvetica, Arial, san-serif;
+    max-width: 2500px;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 24x;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.text-red {
+    color: #FF4B4B;
+}
+.text-grey{
+    color:#BDBDBD;
+}
+
+.row {
+    margin: 0
+}
+
+.p-4 {
+    padding: 40px !important;
+}
+
+.bg-black {
+    background-color: #0D0D0E;
+}
+
+.container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+}
+
+.banner{
+    /* max-height: 1738px;
+    position: relative;
+    overflow:hidden; */
+position: relative;
+width: 3255px;
+height: 1801px;
+left: -641px;
+top: -74px;
+background: url(../images/caseBanner.png)no-repeat top right;
+}
+.banner img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
+}
+.banner:before{
+ content:'';
+ width: 120%;
+ height:50%;
+ position: absolute;
+ bottom: -3px;
+ right:0;
+ background:-o-linear-gradient(286deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+ background:linear-gradient(164deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%)
+}
+
+.topCopy {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.videoBannerTop {
+    max-width: 1015px;
+    margin: 10% auto 0;
+}
+.caseStudyContent > h2,.videoMobile{
+    display: none;
+}
+
+.caseStudymobile .row p{
+    font-size:16px;
+    line-height: 20px
+}
+.threeBlocks div,.fourBlocks div,.twoBlocks div,.oneBlock div{
+    padding: 0;
+    margin:10px 0
+}
+.fourBlocks div{
+    max-width: 24%;
+}
+.threeBlocks div{
+    max-width: 32.5%;
+}
+.twoBlocks div{
+    max-width:49%;
+}
+.smallText{
+    font-size:12px;
+    line-height: 26px
+}
+.seeAll{
+    border-radius: 26px;
+    font-size: 14px;
+    padding: 10px 35px 11px;
+    -webkit-transition:all 0.36s ease-in-out;
+    -o-transition:all 0.36s ease-in-out;
+    transition:all 0.36s ease-in-out;
+}
+.seeAll:hover{
+    background-color:#FF4B4B;
+    border-color:#FF4B4B !important;
+}
+.footer > div > a{
+    margin: -4px 0 0;
+}
+.caseStudyContent {
+    margin-top: -200px;
+}
+.scrollContainer {
+    min-height: 450px;
+}
+.scrollContainer::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    right: 0;
+    background: url(../images/Rectangle.svg)no-repeat top right;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.scrollBox {
+    max-width: 300px;
+    position: relative;
+    padding-right: 5%;
+}
+.scrollBlock {
+    width: 100%;
+    height: 124px;
+    padding: 5% 0;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    /* overflow-y: scroll;
+                overflow-x: hidden;
+                -ms-overflow-x: hidden;
+                position:relative;
+                -ms-overflow-style:-ms-autohiding-scrollbar; */
+
+}
+.scrollBox {
+    max-width: 100%;
+    position: relative;
+    padding-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.max {
+    padding:5% 0;
+    max-width: 300px;
+}
+.scrollBlock .scrollBox:last-child .max{
+    padding-bottom:0;
+}
+.scrollContainer::after {
+    content: 'Key Results';
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    display: inline-block;
+    font-size: 50px;
+    font-family: Sofia-Pro;
+    color: #FF4B4B;
+}
+.hovRed:hover{
+    color:#FF4B4B !important;
+}
+@media screen and (max-width:1450px){
+    .scrollContainer::before{
+        width:90%;
+        height: 90%;
+    }
+    .scrollContainer{
+        min-height: 410px;
+    }
+    .keyResultsInfo p{
+        margin-top:-50px;
+    }
+    .max{
+        padding:2% 0;
+    }
+}
+@media screen and (max-width:1300px){
+    .videoBannerTop{
+        max-width: 860px;
+    }
+    .scrollContainer{
+        min-height: 390px;
+    }
+}
+@media screen and (max-width:1150px){
+   .scrollContainer h2{
+        font-size: 50px;
+    }
+    .scrollBox h4{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .scrollContainer > h2{
+        margin-top: -100px;
+    }
+    .max{
+        padding:5% 0;
+    }
+}
+@media screen and (max-width:1024px){
+    h1 {
+        font-size: 62px;
+        line-height: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    h4 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .topCopy{
+        top:25%;
+    }
+    .topCopy h1{
+        font-size:74px;
+        line-height:74px;
+    }
+    .videoBannerTop{
+        max-width: 768px;
+        margin-top:30%;
+    }
+    .banner img{
+        -o-object-position: center center;
+           object-position: center center;
+    }
+    .caseStudyContent {
+        margin-top: -250px;
+    }
+    .scrollContainer > h2 {
+        margin-top: -100px;
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width:991px){
+    .videoBannerTop{
+        max-width: 650px;
+    }
+    .scrollContainer::after{
+        top:10%;
+        left:17%;
+    }
+
+}
+@media screen and (max-width:768px){
+    h1 {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    h2,.scrollContainer h2,.scrollContainer::after{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    h4, .scrollContainer h4{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    h5 {
+        font-size: 17px;
+        line-height: 22x;
+    }
+    .banner{
+        max-height:800px;
+        width: 100%;
+        height: 497px;
+        left: 0px;
+        top: 0px;
+        background: url(../images/caseBanner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+    }
+
+    .banner:before{
+        /* height:55% */
+        /* height: 80%; */
+        width: 115%;
+        height: 50%;
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+    }
+    .topCopy{
+        display: none;
+    }
+    .caseStudyContent > h2,.videoMobile{
+        display: block ;
+    }
+    .footer h5 {
+        font-size: 15px;
+    }
+    .smallText{
+        font-size:10px;
+        line-height: 20px;
+    }
+    .arrow img {
+        width: 7px;
+        height: 9px;
+    }
+    .seeAll{
+        margin: 0 !important;
+    }
+    .caseStudyContent {
+        margin-top: 0;
+
+
+        position: relative;
+    }
+    .max {
+        padding: 5% 0;
+        max-width: 220px;
+    }
+    .scrollContainer::after{
+        left:5%;
+    }
+    .scrollBlock{
+        height:100px;
+    }
+}
+@media screen and (max-width:600px){
+    .caseStudymobile .row p{
+        font-size:12px;
+        line-height: 16px
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .threeBlocks div,.fourBlocks div,.twoBlocks div,.oneBlock div{
+        max-width: 100%;
+        margin:5px 0
+    }
+    .footer h5 {
+        font-size: 12px;
+    }
+    .smallText{
+        font-size:10px;
+        line-height: 20px;
+    }
+    .arrow img {
+        width: 6px;
+        height: 9px;
+    }
+    .seeAll{
+        padding: 7px 24px 10px;
+        font-size: 13px
+    }
+    .scrollContainer {
+        min-height: 300px;
+    }
+}
+@media screen and (max-width:460px){
+    .scrollContainer::before {
+        width: 90%;
+        height: 85%;
+    }
+    .scrollContainer h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .scrollContainer {
+        min-height: 250px;
+    }
+    .scrollBlock {
+        height: 75px;
+    }
+    .max{
+        padding: 1% 0;
+        max-width: 160px;
+    }
+}
+@media screen and (max-width:390px){
+    .scrollContainer {
+        min-height: 250px;
+    }
+    .scrollContainer::before {
+        width: 95%;
+        height: 80%;
+    }
+    .scrollBlock{
+        margin-top: -40px;
+    }
+}

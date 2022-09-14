@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/perspective.css">
+    <!-- Font File -->
+    <link rel="stylesheet" href="https://use.typekit.net/ede1nwc.css">
+    <title>Javelin</title>
+</head>
+
+<body style="background: #0D0D0E;">
+    <div class="container-fluid position-relative reset_padding" id="main_home_wrapper" style="overflow: hidden;">
+        <div class="row reset_margin">
+            <div class="col-12 reset_padding perspective_main_wrapper">
+                <div class="perspective-item">
+                    <!-- For video carousel remove the "background-image" property from the parent, 
+                        uncomment the below line of code and 
+                        set "video:true" in the Owl initializer function in the script below -->
+                    <!-- <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a> -->
+                    <div class="perspective_caption_wrapper d-flex">
+                        <div>
+                            <div class="perspective_date">December  2, 2019</div>
+                            <h2 class="perspective_caption_heading">How Digital is Reshaping the Way We Live 50c</h2>
+                            <p class="perspective_caption_description">Follow Javelin’s multi-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="hidem">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 400c</span></p>
+                            <button onclick="location.href = 'articleDetail.html';" id="read_more_btn" type="button" class="btn btn-dark">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row reset_margin">
+                    <div class="col-xl-6 reset_padding perspective_overlay d-flex align-items-center">
+                        <div class="row reset_margin">
+                            <div class="col-xl-12 reset_padding">
+                                <div class="row reset_margin perspective_overlay_textWrap d-flex align-items-center">
+                                    <div class="col-12 reset_padding">
+                                        <div class="perspective_date">December  2, 2019</div>
+                                        <div class="perspective_article_title" onclick="location.href = 'articleDetail.html';">So You Want to Evolve Your Brand’s Voice 50c ideal</div>
+                                    </div>
+                                    <div class="col-12 reset_padding">
+                                        <div class="perspective_date">December  2, 2019</div>
+                                        <div class="perspective_article_title" onclick="location.href = 'articleDetail.html';" class="active">Personalization, Fast and Slow</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 reset_padding">
+                                        <div class="perspective_date">December  2, 2019</div>
+                                        <div class="perspective_article_title" onclick="location.href = 'articleDetail.html';">How Digital is Reshaping the Way We Live</div>
+                                    </div>
+                                    <div class="col-12 reset_padding">
+                                        <div class="perspective_date">December  2, 2019</div>
+                                        <div class="perspective_article_title" onclick="location.href = 'articleDetail.html';">The Ripple Effects of Nike's Calculated Risk</div>
+                                    </div>
+                                    <div class="col-12 reset_padding seeAll">
+                                        <div class="perspective_article_title" onclick="location.href = 'perspectiveArchive.html';" target="_self">See All</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" data-goto="go_home" onclick="myFunction(this)">
+                    <img src="images/J_logo.svg" alt="" class="j_logo img-fluid hidem">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="header_menu"></div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    $(function() {
+        $("#header_menu").load("header.html");
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/*Header CSS*/
+.navbar{-ms-justify-content: space-between; }
+#header_menu{position: absolute; top: 0px; left: 0px; width: 100%; height: auto; }
+.nav_wrapper{top: 0px; left: 0px; padding: 54px 82px 0px 61px; }
+#javelin_logo{cursor: pointer; width: 131px; }
+.hamburger_icon{cursor: pointer; }
+#hamburger_img{width: 47.7px; height: 22px; }
+#main_menu{display: none; height: 100vh; min-height: 850px; color: #fff; font-family: sofia-pro; }
+.orange_section_menu{height: 100vh;min-height: 850px;background: #FF4B4B;font-size: 32px;line-height: 38px;letter-spacing: -0.04em;color: #FFFFFF;font-weight: bold;}
+.orange_section_menu a{text-decoration: none; color: #fff; }
+.orange_section_menu .row{/*padding-left: 38%; */
+ padding-left: 244px; }
+.orange_section_menu .col-12{padding-bottom: 25px; text-transform: uppercase; }
+.black_section_menu{height: 100vh; background: #0D0D0E; overflow: hidden; min-height: 850px; }
+.j_logo_menu{cursor: pointer; width: 271px; }
+.close_main_menu{cursor: pointer; position: absolute; width: 54px; height: 54px; right: -13px; top: 11px; }
+#contact_us{display: none; width: 100%; height: 100vh; min-height: 850px; background: #0D0D0E; font-family: sofia-pro; color: #FFFFFF; }
+#contact_us div{background: #0D0D0E; }
+#contact_us .copy,#contact_us .copy *{font-size: 16px; line-height: 26px; }
+#contact_us #group1{padding: 40px 0px 18px; }
+#contact_us #group2{padding: 0px 0px 50px; }
+#contact_us #group3 .col-md-6,#contact_us #group3 .col-lg-4{padding-right: 20px; }
+#contact_us .content_color{color: #828282; }
+.hr_top{/* padding-top: 18px; */
+ /*margin-right: 20px; */
+ opacity: 0.5; border-top: 1px solid #FFFFFF; }
+.contact_us_add_row_pad{padding-top: 40px; }
+#contact_us_form *{background: #0D0D0E; border-radius: 0px; padding-bottom: 10px; }
+#contact_us_form input,#contact_us_form select,#contact_us_form textarea{border: 1px solid #828282; color: #828282; outline: 0 !important; outline: none !important; -webkit-appearance: none; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+input:focus,textarea:focus,select:focus{outline: 0 !important; outline: none !important; -webkit-appearance: none; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+input::-webkit-input-placeholder{color: #828282 !important; }
+input::-moz-placeholder{color: #828282 !important; }
+input:-ms-input-placeholder{color: #828282 !important; }
+input::-ms-input-placeholder{color: #828282 !important; }
+input:: placeholder{color: #828282 !important; }
+textarea::-webkit-input-placeholder{color: #828282 !important; }
+textarea::-moz-placeholder{color: #828282 !important; }
+textarea:-ms-input-placeholder{color: #828282 !important; }
+textarea::-ms-input-placeholder{color: #828282 !important; }
+textarea::placeholder{color: #828282 !important; }
+select::-webkit-input-placeholder{color: #828282 !important; }
+select::-moz-placeholder{color: #828282 !important; }
+select:-ms-input-placeholder{color: #828282 !important; }
+select::-ms-input-placeholder{color: #828282 !important; }
+select::placeholder{color: #828282 !important; }
+input::-moz-placeholder{color: #828282 !important; }
+textarea::-moz-placeholder{color: #828282 !important; }
+select::-moz-placeholder{color: #828282 !important; }
+input:-ms-placeholder{color: #828282 !important; }
+textarea:-ms-placeholder{color: #828282 !important; }
+select:-ms-input-placeholder{color: #828282 !important; }
+#contact_us_form #submit_btn{position: relative; background: #FF4B4B; border-radius: 26px !important; font-size: 14px; text-align: center; letter-spacing: -0.04em; border: 0; text-transform: uppercase; margin-left: 18px; padding: 4% 23%; }
+.j_logo{width: 134px; position: absolute; bottom: 80px; right: 80px; }
+#vid{width: 100%; height: 100vh; overflow: hidden; }
+.contact_us_address{padding: 94px 0px 0px 14px; }
+
+@media (min-width: 768px) and (max-width: 1025px){
+.nav_wrapper{padding: 52px 40px 0px 20px; }
+ .close_main_menu{right: -10px; top: 12px; }
+ #main_menu .row{height: 100%; }
+ .orange_section_menu{text-transform: uppercase; height: 60%; min-height: 60%; background: #FF4B4B; font-size: 28px; line-height: 26px; color: #FFFFFF; }
+ .orange_section_menu .row{padding-top: 20%; padding-left: unset; text-align: center; }
+ .orange_section_menu .col-12{padding-bottom: 4%; }
+ .black_section_menu{height: 40%; min-height: 40%; background: #0D0D0E; }
+ .j_logo_menu{width: 80px; }
+ #contact_us_form #submit_btn{width: 97px; }
+ #contact_us_form #submit_btn{margin-left: 8px; }
+ .j_logo{width: 50px; height: 72px; bottom: 35px; right: 31px; }
+}
+
+@media (max-width: 767px){
+.nav_wrapper{padding: 18px 31px 0px 20px; }
+ #javelin_logo{width: 73px; height: 41px; }
+ #hamburger_img{width: 26.69px; height: 14px; }
+ .orange_section_menu{text-transform: uppercase; height: 537px; background: #FF4B4B; font-size: 32px; line-height: 38px; font-size: 20px; line-height: 26px; letter-spacing: -0.04em; color: #FFFFFF; min-height: 537px; }
+ .orange_section_menu .row{padding-top: 12%; padding-left: unset; text-align: center; }
+ .orange_section_menu .col-12{padding-bottom: 5%; }
+ .black_section_menu{height: 313px; min-height: 313px; background: #0D0D0E; }
+ .j_logo_menu{width: 80px; }
+ .close_main_menu{width: 29px; height: 29px; right: 0px; top: 8px; }
+ .close_main_menu img{width: 29px; height: 29px; }
+ #contact_us{text-align: center; padding-top: 100px; }
+ .hr_top{width: 153px; padding-bottom: 37px; margin: 0px auto; }
+ #contact_us_form{padding: 42px 34px; background: #0D0D0E; }
+ #contact_us_form #submit_btn{margin-left: 8px; }
+ #contact_us #group3 .col-md-6, #contact_us #group3 .col-lg-4{padding-right: 0px; }
+ .contact_us_add_row_pad{padding: 20px 80px 0px !important; }
+ .j_logo{width: 50px; height: 72px; bottom: 35px; right: 31px; }
+ .contact_us_address{padding: 0px; }
+}

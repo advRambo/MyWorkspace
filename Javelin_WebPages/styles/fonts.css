@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'ATTAleckSans-Italic';
+    src: url('../fonts/ATTAleckSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCondensed-Bold';
+    src: url('../fonts/DINCondensed-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATTAleckSans-Regular';
+    src: url('../fonts/ATTAleckSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATTAleckSans-Medium';
+    src: url('../fonts/ATTAleckSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATTAleckSans-Thin';
+    src: url('../fonts/ATTAleckSans-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ATTAleckSans-Light';
+    src: url('../fonts/ATTAleckSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,200 @@
+/*@media (min-aspect-ratio: 16/9) {}*/
+
+.perspective-item {/* height: 100vh; *//* min-height: 53.125rem; */ /* 850px */background: url('../images/perspective_hero.png') no-repeat;background-size: cover;background-position: center;}
+
+.perspective_caption_wrapper {
+color: #fff;
+font-family: sofia-pro;
+width: 50%;
+height: 100vh;
+min-height: 53.125rem; /* 850px */
+background-image: -webkit-gradient(linear, left top, right top, from(rgba(13, 13, 14, 0.4)), to(rgba(13, 13, 14, 0)));
+background-image: linear-gradient(90deg, rgba(13, 13, 14, 0.4) 0%, rgba(13, 13, 14, 0) 100%);
+-webkit-background-image: -webkit-gradient(linear, left top, right top, from(rgba(13, 13, 14, 0.4)), to(rgba(13, 13, 14, 0)));
+-webkit-background-image: linear-gradient(90deg, rgba(13, 13, 14, 0.4) 0%, rgba(13, 13, 14, 0) 100%);
+-moz-background-image: linear-gradient(90deg, rgba(13, 13, 14, 0.4) 0%, rgba(13, 13, 14, 0) 100%);
+-o-background-image: -o-linear-gradient(left, rgba(13, 13, 14, 0.4) 0%, rgba(13, 13, 14, 0) 100%);
+padding-left: 5.125rem; /* 82px */
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+
+.perspective_caption_wrapper div{
+width: 37.5875rem;
+}
+
+.perspective_date{font-size: 12px; /* 12px */line-height: 12px; /* 18px */letter-spacing: -0.03em;padding-bottom: 0.9375rem; /* 15px */font-weight: normal;}
+
+.perspective_caption_heading {
+font-size: 60px;
+line-height: 60px;
+letter-spacing: -0.05em;
+padding-bottom: 1.625rem; /* 26px */
+}
+
+.perspective_caption_description {
+/* 16px */
+/* 26px */
+padding-bottom: 2.5rem; /* 40px */
+/* 307px */
+padding-right: 1.25rem; /* 20px */
+font-size: 16px;
+line-height: 26px;
+font-weight: normal;
+}
+
+#read_more_btn {
+position: relative;
+width: 7.3125rem; /* 117px */
+height: 2.125rem; /* 34px */
+background: #FF4B4B;
+border-radius: 1.625rem /* 26px; !important;; */;
+font-size: 0.875rem; /* 14px */
+text-align: center;
+letter-spacing: -0.04em;
+border: 0;
+}
+
+#read_more_btn:active{
+background: #FF4B4B;
+outline: 0;
+}
+
+.perspective_overlay {
+position: absolute;
+top: 0rem; /* 0px */
+right: 0%;
+height: 100vh;
+min-height: 53.125rem; /* 850px */
+background: rgba(13, 13, 14, 0.95);
+}
+
+.perspective_overlay_textWrap {
+font-family: sofia-pro;
+color: #FFFFFF;
+padding-left: 4.5625rem; /* 73px */
+font-size: 32px;
+line-height: 38px;
+letter-spacing: -0.04em;
+width: 29rem;
+}
+
+.perspective_overlay_textWrap .perspective_article_title {
+cursor: pointer;
+text-decoration: none;
+color: #fff;
+}
+
+.perspective_overlay_textWrap .col-12 {
+padding-bottom: 3.875rem; /* 62px */
+}
+
+.perspective_overlay_textWrap .perspective_article_title:hover {
+color: #FF4B4B;
+}
+
+.perspective_close_btn_wrap {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+
+
+@media (min-width: 48rem /* 768px */) and (max-width: 64rem /* 1024px */) {
+
+.perspective_main_wrapper{
+	/* width: 100%; */
+	/* height: 100vh; */
+}
+
+.perspective-item{
+	/* height: 45%; */
+}
+
+#javelin_logo {
+width: 8.1875rem; /* 131px */
+height: 4.625rem; /* 74px */
+}
+
+#hamburger_img {
+width: 2.9813rem; /* 47.7px */
+height: 1.375rem; /* 22px */
+}
+
+.perspective_caption_description {
+/* 327px */font-size: 1.2rem; /* 16px */line-height: 1.525rem; /* 26px */padding-bottom: 1rem; /* 15px */padding-right: 0px;}
+
+.perspective_caption_heading {
+/* 80px */
+/* 80px */padding-bottom: 1rem; /* 30px */font-size: 45px;line-height: 50px;}
+
+.perspective_caption_wrapper {padding-left: 1.9375rem; /* 31px */width: 100%;-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;text-align: center;height: unset;min-height: unset;padding: 20% 16% 6%;}
+
+.perspective_overlay {height: unset;position: unset;top: unset;right: unset;bottom: 0%; /* 31px */min-height: unset; /* 347px */text-align: center;padding: 10% 16% 6%;}
+
+.perspective_overlay_textWrap {vertical-align: bottom;
+/* 40px */
+/* 36px */padding-left: 0rem; /* 0px */padding-bottom: 1.125rem; /* 18px */height: auto;width: 100%;font-size: 30px;line-height: 40px;  /* or 111% */text-align: center;letter-spacing: -0.06em;}
+
+.perspective_overlay_textWrap .col-12 {padding-bottom: 2.0625rem; /* 25px */}
+
+.perspective_date {
+padding-bottom: 0.6375rem;
+}
+
+.j_logo{
+display: none;
+}
+
+button#read_more_btn {background: none;border: 1px solid #fff;}
+
+.seeAll{
+padding-bottom: 0px !important;
+}
+
+}
+
+@media (max-width: 47.9375rem /* 767px */) {
+.perspective_caption_heading {
+/* 42px */
+/* 44px */
+padding-bottom: 1.25rem; /* 20px */
+font-size: 28px;
+line-height: 32px;  /* or 114% */
+text-align: center;
+letter-spacing: -0.04em;
+}
+
+.perspective_caption_wrapper {padding: 5rem 2rem 3rem; /* 144px 0px 0px 31px */background: rgba(13, 13, 14, 0.38);width: 100%;-webkit-box-align: end;-ms-flex-align: end;-webkit-box-pack: center;-ms-flex-pack: center;/* justify-content: center; */text-align: center;height: 50%;min-height: 50%;}
+
+.perspective_caption_description {
+padding-bottom: 1.25rem; /* 20px */
+font-size: 16px;
+line-height: 24px;  /* or 150% */
+}
+
+.perspective_overlay {position: unset;top: unset;right: unset;height: auto;bottom: 0%;padding: 2rem; /* 31px */min-height: unset; /* 347px */}
+
+.perspective_overlay_textWrap {vertical-align: bottom;
+/* 28px */
+/* 33px */padding-left: 0rem; /* 0px */padding-bottom: 1.125rem; /* 18px */height: auto;font-size: 18px;line-height: 20px;  /* or 111% */text-align: center;letter-spacing: -0.06em;width: 100%;}
+
+.perspective_overlay_textWrap .col-12 {
+padding-bottom: 2.375rem; /* 22px */
+}
+
+.perspective_caption_wrapper div {
+width: 100%;
+}
+
+button#read_more_btn {
+background: none;
+border: 1px solid #fff;
+}
+
+.seeAll{
+padding-bottom: 0px !important;;
+}
+
+}

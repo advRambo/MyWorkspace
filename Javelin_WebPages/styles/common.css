@@ -1,0 +1,46 @@
+/*Common CSS*/
+#stop_scroll{
+    hi
+}
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    font-family: sofia-pro;
+}
+
+.reset_margin {
+    margin: 0px;
+}
+
+.reset_padding {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.row,
+form {
+    width: 100%;
+}
+
+.showm {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .hidem {
+        display: none;
+    }
+
+    .showm {
+        display: block;
+    }
+}
