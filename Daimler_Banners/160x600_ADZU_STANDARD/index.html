@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ad.size" content="width=160,height=600">
+  <title>Mercedes-Benz</title>
+
+  <style>body{padding:0;margin:0;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:'MBCorpoA_TitleCond',Helvetica,Arial,sans-serif;text-align:left;font-size:10px}#container{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}#container,#wrapper{position:absolute;background-color:#000;overflow:hidden}#exit-link{cursor:pointer;z-index:100;outline-offset:-5px}#exit-link,.element,.img img{position:absolute}.img img{height:100%}.img img,.svg img{width:100%}#backup-image{height:100%;color:#fff;background-color:#000;display:table;font-family:inherit}#backup-image span{display:table-cell;vertical-align:middle;font-size:16px;padding:15px;letter-spacing:1px}.hide{opacity:0}#backup-image,.textWrapper{position:absolute;width:100%}.headline{position:absolute;color:#fff}#cta{font-family:'MBCorpoS_Text','MBCorpoATitleCond',Helvetica,Arial,sans-serif;background-color:#00adef;display:block;box-sizing:border-box;overflow:hidden}#cta,#cta_text{color:#fff;text-align:center}#txt_logo{font-family:'MBCorpoATitleCond',Helvetica,Arial,sans-serif;font-size:18px}.logo_container{background:#000}.logo_text{font-family:'MBCorpoA_TitleCond';letter-spacing:.1px}.blackBg{background-color:#000}.headline_copy{font-family:'MBCorpoA_TitleCond';line-height:1}.terms_link{font-family:'MBCorpoS_Text';text-decoration:underline;color:#fff;display:block;font-size:inherit}#ctaShine{top:0;left:0;width:100%;height:100%;background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.5) 50%,rgba(255,255,255,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 )}</style>
+  <style>@font-face{font-family:'MBCorpoA_TitleCond';src:url(https://assets.oneweb.mercedes-benz.com/plugin/workbench/fonts/1.4.0/WOFF2/MBCorpoATitleCond-Regular-Web.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'MBCorpoS_Text';src:url(https://assets.oneweb.mercedes-benz.com/plugin/workbench/fonts/1.4.0/WOFF2/MBCorpoSText-Regular-Web.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap}</style>
+
+  <!-- <link as="font" crossorigin href="https://assets.oneweb.mercedes-benz.com/plugin/workbench/fonts/1.4.0/WOFF2/MBCorpoATitleCond-Regular-Web.woff2" rel="preload" type="font/woff2"> 
+  <link as="font" crossorigin href="https://assets.oneweb.mercedes-benz.com/plugin/workbench/fonts/1.4.0/WOFF2/MBCorpoSText-Regular-Web.woff2" rel="preload" type="font/woff2">  -->
+
+  <script type="text/javascript">var clickTag = "https://www.mercedes-benz.com";</script>
+
+</head>
+
+<body>
+
+  <!-- <div id="container" class="hide" style="width:970px; height:250px"
+    data-bind="style:{height:Height + 'px', width:Width + 'px'}"> -->
+  <div id="container" class='' style="width:160px; height:600px"
+    data-bind="style:{height:Height + 'px', width:Width + 'px'}"></div>
+
+  <div id="wrapper" class=''>
+
+    <!-- Add your Banner elements in here -->
+
+    <div id="frame" class="frame element">
+      <div id="img1" class="bgImg element img">
+        <img src="img1.jpg" alt="" data-bind="attr:{src:CDO_354_Image_01.Value}">
+      </div>
+
+      <div id="black_bg1" class="blackBg element"></div>
+
+      <div id="headline_1" class="headline_copy element hide" data-bind="html:CDO_354_Headline_01.Value">
+        The new C-Class by Mercedes-Benz.
+      </div>
+
+      <div id="img2" class="bgImg element img hide">
+        <img class="img" src="img2.jpg" alt="" data-bind="attr:{src:CDO_354_Image_02.Value}">
+      </div>
+
+      <div id="black_bg2" class="blackBg element"></div>
+
+      <div id="headline_2" class="headline_copy element hide" data-bind="html:CDO_354_Headline_02.Value">
+        Connect to the road ahead with augmented-reality navigation.
+      </div>
+
+      <div id="headline_3" class="headline_copy element hide" data-bind="html:CDO_354_Offer_Headline.Value">
+        The new C-Class. Discover it for yourself today.
+      </div>
+
+    </div>
+
+    <div id="black_overlay" class="black_overlay element blackBg" style="opacity: 0.5;"></div>
+    <div id="logo_container" class="logo_container element">
+    </div>
+    <div id="logo_text" class="logo_text element">
+      The new C-Class.
+    </div>
+    <div id="logo" class="logo element img">
+      <img src="logo.png" id="mainLogo" alt="Mercedes_Benz_Logo">
+    </div>
+    <div id="cta" class="element hide">
+      <span id="cta_text" data-bind="html:CDO_354_CTA_Message.Value">Book a test drive</span>
+      <div id="ctaShine" class="ctaShine element"></div>
+    </div>
+    <div id="terms_conditions" class="element hide">
+      <a href="javascript:void(0)" class="terms_link">
+        View terms &amp; conditions
+      </a>
+    </div>
+    <div id="black_stick" class="blackBg element hide"></div>
+
+
+    <!-- <div id="sprite"></div> -->
+
+  </div>
+
+  <div id="backup-image" class="hide"><span>BREAKPOINT<br>NOT SET</span></div>
+  <div id="exit-link"></div>
+
+  </div>
+
+</body>
+
+
+<!-- Banner Library Files -->
+<script type="text/javascript">var utils={waringLog:function(o){console.log("%c"+o+" ","background: #FF0000; color: #FFFFFF")},alertLog:function(o){console.log("%c"+o+" ","background: #0f0ffb; color: #FFFFFF")},yellowLog:function(o){console.log("%c"+o+" ","background: #ffff00; color: #000000")},tealLog:function(o){console.log("%c"+o+" ","background: #008080; color: #ffffff")},removeLetters:function(o){return o.replace(/\D/g,"")},blueLog:function(o){console.log("%c"+o,"color:#FFFFFF; background-color:blue")},greenLog:function(o){console.log("%c"+o,"color:#000000; background-color:#50cb33")},redLog:function(o){console.log("%c"+o,"color:#FFFFFF; background-color:#FF0000")},sortByKey:function(o,n){return o.sort(function(o,e){var r=o[n],c=e[n];return r<c?-1:r>c?1:0})},processMargin:function(o){if("object"==typeof o)return o.offsetLeft;if(o.match("px"))return o=o.split("px"),parseInt(o[0]);if(o.match("%")){if("W"==(o=o.split("%"))[1])return o[0]/100*banner.breakPoint.w;if("H"==o[1])return o[0]/100*banner.breakPoint.h}else console.log("processMargin(): Use % or px to define the value")},makePositive:function(o){return o<0?-1*o:o},pxToPercent:function(o,n){if("w"==n||"h"==n)return o/banner.breakPoint[n]*100;utils.waringLog('please specify either "w" or "h" to define the side you are calculating the % from')}};</script>
+<script type="text/javascript">!function(e){console.log("------------------------------------------------"),console.log("layout.js: Called");var t=e.layout={};t._300x250=function(){e.image._BG(e.logo_container.element,230,0,70,250),e.copy._content(e.logo_text.element,208,115,108,180,18,"left",1.8),e.image._BG(e.logo.element,248,195,35,35),e.image._BG(e.black_overlay.element,0,0,300,250),e.image._BG(e.frame.element,0,0,300,250),e.image._BG(e.img1.element,0,0,300,250),e.image._BG(e.black_bg1.element,0,0,300,250),e.copy._content(e.headline_1.element,20,20,190,190,58,"left",2.9),e.image._BG(e.img2.element,0,0,300,250),e.image._BG(e.black_bg2.element,0,0,300,250),e.copy._content(e.headline_2.element,20,20,190,190,116,"left",2.9),e.copy._content(e.headline_3.element,20,20,200,200,87,"left",2.9),e.image._BG(e.black_stick.element,0,120,20,100),e.cta._typewriter(e.cta_1.element,20,134,135,40,1.4,10),e.cta._typewriter(e.terms_conditions.element,20,188,200,11,1.1,0)},t._160x600=function(){console.log("layout._160x600()"),w=160,h=600,e.image._BG(e.logo_container.element,0,400,w,200),e.copy._content(e.logo_text.element,68,465,108,180,18,"left",1.8),e.image._BG(e.logo.element,108,545,35,35),e.image._BG(e.black_overlay.element,0,0,w,h),e.image._BG(e.frame.element,0,0,w,h),e.image._BG(e.img1.element,0,0,w,h),e.image._BG(e.black_bg1.element,0,0,w,h),e.copy._content(e.headline_1.element,10,120,140,150,69,"left",2.3),e.image._BG(e.img2.element,0,0,w+70,h),e.image._BG(e.black_bg2.element,0,0,w,h),e.copy._content(e.headline_2.element,10,120,140,150,138,"left",2.3),e.copy._content(e.headline_3.element,10,120,140,200,92,"left",2.3),e.image._BG(e.black_stick.element,0,220,10,100),e.cta._typewriter(e.cta_1.element,10,244,135,40,1.4,10),e.cta._typewriter(e.terms_conditions.element,10,300,140,11,1.1,0)},t._300x600=function(){console.log("layout._300x600()"),w=300,h=600,e.image._BG(e.logo_container.element,0,400,w,200),e.copy._content(e.logo_text.element,208,465,108,180,18,"left",1.8),e.image._BG(e.logo.element,248,545,35,35),e.image._BG(e.black_overlay.element,0,0,w,h),e.image._BG(e.frame.element,0,0,w,h),e.image._BG(e.img1.element,0,0,w,h),e.image._BG(e.black_bg1.element,0,0,w,h),e.copy._content(e.headline_1.element,20,120,190,190,58,"left",2.9),e.image._BG(e.img2.element,0,0,w+70,h),e.image._BG(e.black_bg2.element,0,0,w,h),e.copy._content(e.headline_2.element,20,120,190,190,116,"left",2.9),e.copy._content(e.headline_3.element,20,120,200,200,87,"left",2.9),e.image._BG(e.black_stick.element,0,220,20,100),e.cta._typewriter(e.cta_1.element,20,234,137,40,1.4,10),e.cta._typewriter(e.terms_conditions.element,20,290,200,11,1.1,0)},t._970x250=function(){console.log("layout._970x250()"),w=970,h=250,e.image._BG(e.logo_container.element,773,0,197,h),e.copy._content(e.logo_text.element,793,208,108,180,18,"left",1.8),e.image._BG(e.logo.element,915,203,35,35),e.image._BG(e.black_overlay.element,0,0,w,h),e.image._BG(e.frame.element,0,0,w,h),e.image._BG(e.img1.element,0,0,w,h),e.image._BG(e.black_bg1.element,0,0,w,h),e.copy._content(e.headline_1.element,30,96,190,190,58,"left",2.9),e.image._BG(e.img2.element,0,0,w,h+70),e.image._BG(e.black_bg2.element,0,0,w,h),e.copy._content(e.headline_2.element,30,96,320,320,58,"left",2.9),e.copy._content(e.headline_3.element,30,96,320,320,58,"left",2.9),e.image._BG(e.black_stick.element,360,80,200,100),e.cta._typewriter(e.cta_1.element,560,96,135,40,1.4,10),e.cta._typewriter(e.terms_conditions.element,560,152,200,11,1.1,0)},t._728x90=function(){console.log("layout._728x90()"),w=728,h=90,e.image._BG(e.logo_container.element,531,0,197,h),e.copy._content(e.logo_text.element,551,51,108,180,18,"left",1.8),e.image._BG(e.logo.element,673,43,35,35),e.image._BG(e.black_overlay.element,0,0,w,h),e.image._BG(e.frame.element,0,0,w,h),e.image._BG(e.img1.element,0,0,w,h),e.image._BG(e.black_bg1.element,0,0,w,h),e.copy._content(e.headline_1.element,20,16,190,190,58,"left",2.9),e.image._BG(e.img2.element,0,0,w,h+70),e.image._BG(e.black_bg2.element,0,0,w,h),e.copy._content(e.headline_2.element,20,16,314,320,58,"left",2.9),e.copy._content(e.headline_3.element,20,16,337,337,58,"left",2.9),e.image._BG(e.black_stick.element,300,10,200,100),e.cta._typewriter(e.cta_1.element,357,16,135,40,1.4,10),e.cta._typewriter(e.terms_conditions.element,357,66,200,11,1.1,0)},console.log("layout.js: Loaded")}(window.banner||(window.banner={}));</script>
+<script type="text/javascript">!function(e){console.log("animation.js: Called");var a=e.animation={};a._NOT_SET=function(){new TimelineMax({delay:0,repeat:0,repeatDelay:0}).to(e.wrapper.element,0,{opacity:0},"start").to(e.container.element,0,{opacity:1},"start").to(e.backUpImage.element,0,{opacity:1},"start")},a._0=function(){var a=new TimelineMax({delay:0,repeat:0,repeatDelay:0,onComplete:function(){}});a.addLabel("start").set(e.logo_text.element,{rotate:-90}).set(e.img1.element,{x:-50,scale:1.8}).set([e.black_bg1.element,e.black_bg2.element],{x:300}).set([e.headline_1.element,e.headline_2.element],{x:45}).set([e.cta_1.element,e.ctaShine.element],{x:-200}).to(e.container.element,0,{opacity:1},"start").to(e.wrapper.element,0,{opacity:1},"start"),a.addLabel("frame_1","+=0.5").to(e.black_overlay.element,.25,{x:300,opacity:0,ease:"Power1.ease"},"frame_1+=0").to(e.img1.element,1.25,{x:0,scale:1,ease:"Power2.easeInOut"},"frame_1+=0.75").to(e.black_bg1.element,.4,{x:0,ease:"Power2.ease"},"frame_1+=2.3").to(e.headline_1.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_1+=2.5").to(e.img1.element,.1,{opacity:0,ease:"Power4.ease"},"frame_1+=3.1"),a.addLabel("frame_2","+=1").to(e.black_bg1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2+=0.5").to(e.headline_1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2").to(e.img2.element,.8,{opacity:1,ease:"Power1.ease"},"frame_2+=0.6").to(e.img2.element,1.5,{x:-70,ease:"Power1.ease"},"frame_2+=0.9"),a.addLabel("frame_3","+=0.5").to(e.black_bg2.element,.6,{x:0,ease:"Power4.ease"},"frame_3+=0").to(e.headline_2.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=0.3").to(e.headline_2.element,.5,{opacity:0,ease:"Power4.ease"},"frame_3+=2.0").to(e.black_stick.element,.1,{opacity:1,ease:"Power4.ease"},"frame_3+=2.0").to(e.headline_3.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=2.6").to(e.cta_1.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=3.3").to(e.terms_conditions.element,.5,{opacity:1,ease:"Power4.ease"},"frame_3+=3.7").to(e.ctaShine.element,.8,{x:200},"frame_3+=4.2"),e.exitLink.element.onmouseover=function(){TweenLite.to(ctaShine,.8,{x:200,onComplete:function(){TweenLite.to(ctaShine,0,{x:-200})}})}},a._1=function(){console.log("animation._1()");var a=new TimelineMax({delay:0,repeat:0,repeatDelay:0,onComplete:function(){console.log("animation._1(): endFrame()")}});a.addLabel("start").set(e.logo_text.element,{rotate:-90}).set(e.img1.element,{x:-50,scale:1.8}).set([e.black_bg1.element,e.black_bg2.element],{y:600}).set([e.headline_1.element,e.headline_2.element],{y:60}).set([e.cta_1.element,e.ctaShine.element],{x:-200}).to(e.container.element,0,{opacity:1},"start").to(e.wrapper.element,0,{opacity:1},"start"),a.addLabel("frame_1","+=0.5").to(e.black_overlay.element,.25,{y:600,opacity:0,ease:"Power1.ease"},"frame_1+=0").to(e.img1.element,1.25,{x:0,scale:1,ease:"Power2.easeInOut"},"frame_1+=0.75").to(e.black_bg1.element,.4,{y:0,ease:"Power2.ease"},"frame_1+=2.3").to(e.headline_1.element,.5,{y:0,opacity:1,ease:"Power4.ease"},"frame_1+=2.5").to(e.img1.element,.1,{opacity:0,ease:"Power4.ease"},"frame_1+=3.1"),a.addLabel("frame_2","+=1").to(e.black_bg1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2+=0.5").to(e.headline_1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2").to(e.img2.element,.8,{opacity:1,ease:"Power1.ease"},"frame_2+=0.6").to(e.img2.element,1.5,{x:-70,ease:"Power1.ease"},"frame_2+=0.9"),a.addLabel("frame_3","+=0.5").to(e.black_bg2.element,.6,{y:0,ease:"Power4.ease"},"frame_3+=0").to(e.headline_2.element,.5,{y:0,opacity:1,ease:"Power4.ease"},"frame_3+=0.3").to(e.headline_2.element,.5,{opacity:0,ease:"Power4.ease"},"frame_3+=2.0").to(e.black_stick.element,.1,{opacity:1,ease:"Power4.ease"},"frame_3+=2.0").to(e.headline_3.element,.5,{y:0,opacity:1,ease:"Power4.ease"},"frame_3+=2.6").to(e.cta_1.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=3.3").to(e.terms_conditions.element,.5,{opacity:1,ease:"Power4.ease"},"frame_3+=3.7").to(e.ctaShine.element,.8,{x:200},"frame_3+=4.2"),e.exitLink.element.onmouseover=function(){TweenLite.to(ctaShine,.8,{x:200,onComplete:function(){TweenLite.to(ctaShine,0,{x:-200})}})}},a._2=function(){var a=new TimelineMax({delay:0,repeat:0,repeatDelay:0,onComplete:function(){}});a.addLabel("start").set(e.img1.element,{scale:1.8}).set([e.black_bg1.element,e.black_bg2.element],{x:970}).set([e.headline_1.element,e.headline_2.element],{x:60}).set([e.cta_1.element,e.ctaShine.element],{x:-200}).to(e.container.element,0,{opacity:1},"start").to(e.wrapper.element,0,{opacity:1},"start"),a.addLabel("frame_1","+=0.5").to(e.black_overlay.element,.25,{x:970,opacity:0,ease:"Power1.ease"},"frame_1+=0").to(e.img1.element,1.25,{scale:1,ease:"Power2.easeInOut"},"frame_1+=0.75").to(e.black_bg1.element,.4,{x:0,ease:"Power2.ease"},"frame_1+=2.3").to(e.headline_1.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_1+=2.6").to(e.img1.element,.1,{opacity:0,ease:"Power4.ease"},"frame_1+=3.1"),a.addLabel("frame_2","+=1").to(e.black_bg1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2+=0.5").to(e.headline_1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2").to(e.img2.element,.8,{opacity:1,ease:"Power1.ease"},"frame_2+=0.6").to(e.img2.element,1.5,{y:-70,ease:"Power1.ease"},"frame_2+=0.9"),a.addLabel("frame_3","+=0.5").to(e.black_bg2.element,.6,{x:0,ease:"Power4.ease"},"frame_3+=0").to(e.headline_2.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=0.45").to(e.headline_2.element,.5,{opacity:0,ease:"Power4.ease"},"frame_3+=2.15").to(e.black_stick.element,.1,{opacity:1,ease:"Power4.ease"},"frame_3+=2.15").to(e.headline_3.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=2.75").to(e.cta_1.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=3.45").to(e.terms_conditions.element,.5,{opacity:1,ease:"Power4.ease"},"frame_3+=3.85").to(e.ctaShine.element,.8,{x:200},"frame_3+=4.30"),e.exitLink.element.onmouseover=function(){TweenLite.to(ctaShine,.8,{x:200,onComplete:function(){TweenLite.to(ctaShine,0,{x:-200})}})}},a._3=function(){var a=new TimelineMax({delay:0,repeat:0,repeatDelay:0,onComplete:function(){}});a.addLabel("start").set(e.img1.element,{scale:1.8}).set([e.black_bg1.element,e.black_bg2.element],{x:970}).set([e.headline_1.element,e.headline_2.element],{x:60}).set([e.cta_1.element,e.ctaShine.element],{x:-200}).to(e.container.element,0,{opacity:1},"start").to(e.wrapper.element,0,{opacity:1},"start"),a.addLabel("frame_1","+=0.5").to(e.black_overlay.element,.25,{x:970,opacity:0,ease:"Power1.ease"},"frame_1+=0").to(e.img1.element,1.25,{scale:1,ease:"Power2.easeInOut"},"frame_1+=0.75").to(e.black_bg1.element,.4,{x:0,ease:"Power2.ease"},"frame_1+=2.3").to(e.headline_1.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_1+=2.6").to(e.img1.element,.1,{opacity:0,ease:"Power4.ease"},"frame_1+=3.1"),a.addLabel("frame_2","+=1").to(e.black_bg1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2+=0.5").to(e.headline_1.element,.5,{opacity:0,ease:"Power4.ease"},"frame_2").to(e.img2.element,.8,{opacity:1,ease:"Power1.ease"},"frame_2+=0.6").to(e.img2.element,1.5,{y:-70,ease:"Power1.ease"},"frame_2+=0.9"),a.addLabel("frame_3","+=0.5").to(e.black_bg2.element,.6,{x:0,ease:"Power4.ease"},"frame_3+=0").to(e.headline_2.element,.5,{x:0,opacity:1,ease:"Power4.ease"},"frame_3+=0.45").to(e.headline_2.element,.5,{opacity:0,ease:"Power4.ease"},"frame_3+=2.15").to(e.headline_3.element,.5,{x:0,opacity:1,zIndex:1,ease:"Power4.ease"},"frame_3+=2.75").to(e.headline_3.element,.1,{backgroundColor:"#000000"},"frame_3+=3.4").to(e.cta_1.element,.5,{x:0,zIndex:0,opacity:1,ease:"Power4.ease"},"frame_3+=3.45").to(e.terms_conditions.element,.5,{opacity:1,ease:"Power4.ease"},"frame_3+=3.85").to(e.ctaShine.element,.8,{x:200},"frame_3+=4.30"),e.exitLink.element.onmouseover=function(){TweenLite.to(ctaShine,.8,{x:200,onComplete:function(){TweenLite.to(ctaShine,0,{x:-200})}})}}}(window.banner||(window.banner={}));</script>
+<script type="text/javascript">!function(e){console.log("setup.js: Called");var t=e.setup={};t.getContainerSize=function(){e.container.w=e.container.element.offsetWidth,e.container.h=e.container.element.offsetHeight},t.setWrapperSize=function(){e.wrapper.w=e.container.w-e.safeArea.l-e.safeArea.r,e.wrapper.h=e.container.h-e.safeArea.t-e.safeArea.b,e.wrapper.r=e.wrapper.w/e.wrapper.h,e.wrapper.a=e.wrapper.w*e.wrapper.h,e.wrapper.element.style.top=e.safeArea.t+"px",e.wrapper.element.style.left=e.safeArea.l+"px",e.wrapper.element.style.width=e.wrapper.w+"px",e.wrapper.element.style.height=e.wrapper.h+"px"},t.exitLinkSize=function(){e.exitLink.element.style.top=e.safeArea.t+"px",e.exitLink.element.style.left=e.safeArea.l+"px",e.exitLink.element.style.width=e.wrapper.w-2+"px",e.exitLink.element.style.height=e.wrapper.h-2+"px"},t.getBreakpoint=function(){var t=getBreakpoint(e.wrapper);console.log("setup: chosenBreakpoint: ",t),e.breakPoint=t,e.wrapper.layout=e.breakPoint.layout,e.wrapper.animation=e.breakPoint.animation},t.percentageGrowth=function(){var t=utils.makePositive(e.breakPoint.w-e.container.w),r=utils.makePositive(e.breakPoint.h-e.container.h);t>r?(console.log("setup: setup.percentageGrowth: diffW"),e.percentageGrowth=r/e.breakPoint.h*.8,e.breakPoint.w*e.breakPoint.h>e.container.w*e.container.h&&(e.percentageGrowth=-1*e.percentageGrowth)):t<r?(console.log("setup: setup.percentageGrowth: diffH"),e.percentageGrowth=t/e.breakPoint.w*.8,e.breakPoint.w*e.breakPoint.h>e.container.w*e.container.h&&(e.percentageGrowth=-1*e.percentageGrowth)):(console.log("setup: setup.percentageGrowth: Equal"),e.percentageGrowth=t/e.breakPoint.w)},console.log("setup.js: Loaded")}(window.banner||(window.banner={}));</script>
+<script type="text/javascript">var breakpointThreshold=.2,thumbnailAreaMaxSize=1e4,thumbnailBreakpoint={layout:"layout_thumbnail",animation:"animation_thumbnail"},breakpoints=[{w:300,h:250,layout:banner.layout._300x250,animation:banner.animation._0},{w:300,h:600,layout:banner.layout._300x600,animation:banner.animation._1},{w:970,h:250,layout:banner.layout._970x250,animation:banner.animation._2},{w:160,h:600,layout:banner.layout._160x600,animation:banner.animation._1},{w:728,h:90,layout:banner.layout._728x90,animation:banner.animation._3}];</script>
+<script type="text/javascript">function getBreakpoint(r){function t(r){utils.blueLog("Checking for exact match");for(let t=0;t<breakpoints.length;t++){const e=breakpoints[t];if(r.w==e.w&&r.h==e.h)return e}return utils.redLog("No Exact Match"),!1}r.r=(r.w/r.h).toFixed(4),r.a=(r.w*r.h).toFixed(4);for(var e,n=breakpoints,i=0;i<n.length;i++)(e=n[i]).r=(e.w/e.h).toFixed(4),e.a=(e.w*e.h).toFixed(4);for(var o=breakpoints,a=t=>{var e=t.r-r.r;e<0&&(e*=-1),t.r_diff=e;var n=t.a-r.a;n<0&&(n*=-1),t.a_diff=n},s=0;s<o.length;s++)a(o[s]);return console.log("banner: ",r),console.log("breakpoints: ",breakpoints),t(r)?(utils.greenLog("Exact Match Found"),t(r)):r.a<thumbnailAreaMaxSize?(utils.greenLog("Banner is a thumbnail"),thumbnailBreakpoint):(utils.redLog("Banner is not a thumbnail"),utils.blueLog("Searching for closest breakpoint"),breakpoints=function(){function t(r){return r<1?"portrait":r>1?"landscape":"square"}for(var e,n=[],i=breakpoints,o=0;o<i.length;o++)t((e=i[o]).r)==t(r.r)?n.push(e):t("square"==e.r)&&n.push(e);return n}(),utils.sortByKey(breakpoints,"r_diff"),breakpoints=function(){for(var r,t=[],e=breakpoints[0].r_diff-breakpoints[0].r_diff*breakpointThreshold,n=breakpoints[0].r_diff+breakpoints[0].r_diff*breakpointThreshold,i=breakpoints,o=0;o<i.length;o++)((r=i[o]).r_diff>e&&r.r_diff<n||r.r_diff==e&&r.r_diff==n)&&t.push(r);return t}(),utils.sortByKey(breakpoints,"a_diff"),utils.greenLog("Closest breakpoint found"),breakpoints[0])}</script>
+<script type="text/javascript">!function(t){console.log("image.js: Called");var e=t.image={};e._BG=function(t,e,o,l,s){console.log("image._BG()"),e=utils.pxToPercent(e,"w"),o=utils.pxToPercent(o,"h"),l=utils.pxToPercent(l,"w"),s=utils.pxToPercent(s,"h"),t.style.left=e+"%",t.style.top=o+"%",t.style.width=l+"%",t.style.height=s+"%"},e._BG_rotate=function(t,e,o,l,s,i){console.log("image._BG_rotate()"),e=utils.pxToPercent(e,"w"),o=utils.pxToPercent(o,"h"),l=utils.pxToPercent(l,"w"),s=utils.pxToPercent(s,"h"),t.style.left=e+"%",t.style.top=o+"%",t.style.width=l+"%",t.style.height=s+"%",t.style.transform=i+""},e._LG_bottom=function(t,e,o,l,s){console.log("image._LG_bottom()"),e=utils.pxToPercent(e,"w"),o=utils.pxToPercent(o,"h"),l=utils.pxToPercent(l,"w"),s=utils.pxToPercent(s,"h"),t.style.left=e+"%",t.style.bottom=o+"%",t.style.width=l+"%",t.style.height=s+"%"},e._LG_top=function(t,e,o,l,s){console.log("image._LG_top()"),e=utils.pxToPercent(e,"w"),o=utils.pxToPercent(o,"h"),l=utils.pxToPercent(l,"w"),s=utils.pxToPercent(s,"h"),t.style.left=e+"%",t.style.top=o+"%",t.style.width=l+"%",t.style.height=s+"%"},e._LG_top_right=function(t,e,o,l,s){console.log("image._LG_top_right()"),e=utils.pxToPercent(e,"w"),o=utils.pxToPercent(o,"h"),l=utils.pxToPercent(l,"w"),s=utils.pxToPercent(s,"h"),t.style.right=e+"%",t.style.top=o+"%",t.style.width=l+"%",t.style.height=s+"%"},console.log("image.js: Loaded")}(window.banner||(window.banner={}));</script>
+<script type="text/javascript">!function(o){console.log("svg.js: Called"),(o.svg={}).logo=function(o,e,t,l,n){console.log("svg.logo()"),e=utils.pxToPercent(e,"w"),t=utils.pxToPercent(t,"h"),l=utils.pxToPercent(l,"w"),n=utils.pxToPercent(n,"h"),o.style.right=e+"%",o.style.bottom=t+"%",o.style.width=l+"%",o.style.height=n+"%"},console.log("svg.js: Loaded")}(window.banner||(window.banner={}));</script>
+<script type="text/javascript">!function(t){console.log("cta.js: Called");var e=t.cta={};e._svg=function(t,e,l,i,n,s){console.log("cta._svg()"),e=utils.pxToPercent(e,"w"),l=utils.pxToPercent(l,"h"),i=utils.pxToPercent(i,"w"),n=utils.pxToPercent(n,"h"),t.style.left=e+"%",t.style.top=l+"%",t.style.width=i+"%",t.style.height=n+"%";var o=t.firstElementChild;"center"==s?(o.style.left="50%",o.style.transform="translate(-50%, 0)"):this.div.style.textAlign=s},e._text=function(e,l,i,n,s,o,r,c,d,p,h){console.log("cta._text()"),l=utils.pxToPercent(l,"w"),i=utils.pxToPercent(i,"h"),n=utils.pxToPercent(n,"w"),s=utils.pxToPercent(s,"h"),this.borderRadius=r,this.div=document.createElement("div"),e.style.left=l+"%",e.style.top=i+"%",e.style.width=n+"%",e.style.height=s+"%",e.style.textAlign=o;var a=e.firstElementChild;e.style.fontSize=c+c*t.percentageGrowth+"em",a.style.paddingTop=d+"em",a.style.paddingBottom=p+"em",a.style.paddingLeft=h+"em",a.style.paddingRight=h+"em"},e._text_center=function(e,l,i,n,s,o,r,c,d,p){console.log("cta._text()"),l=utils.pxToPercent(l,"w"),i=utils.pxToPercent(i,"h"),n=utils.pxToPercent(n,"w"),s=utils.pxToPercent(s,"h"),this.borderRadius=r,this.div=document.createElement("div"),e.style.left=l+"%",e.style.top=i+"%",e.style.width=n+"%",e.style.height=s+"%",e.style.textAlign=o;var h=e.firstElementChild;e.style.fontSize=c+c*t.percentageGrowth+"em",h.style.paddingTop=d+"em",h.style.paddingBottom=d+"em",h.style.paddingLeft=p+"em",h.style.paddingRight=p+"em",h.style.width="100%",h.style.textAlign="center"},e._typewriter=function(e,l,i,n,s,o,r){console.log("cta._text()"),l=utils.pxToPercent(l,"w"),i=utils.pxToPercent(i,"h"),n=utils.pxToPercent(n,"w"),s=utils.pxToPercent(s,"h"),this.div=document.createElement("div"),e.style.left=l+"%",e.style.top=i+"%",e.style.width=n+"%",e.style.height=s+"%",e.style.fontSize=o+o*t.percentageGrowth+"em",e.style.padding=r+r*t.percentageGrowth+"px"},e.right=function(e,l,i,n,s,o){console.log("cta._text()"),l=utils.pxToPercent(l,"w"),i=utils.pxToPercent(i,"h"),n=utils.pxToPercent(n,"w"),this.div=document.createElement("div"),e.style.right=l+"%",e.style.top=i+"%",e.style.width=n+"%",e.style.fontSize=s+s*t.percentageGrowth+"em",e.style.padding=o+o*t.percentageGrowth+"px"},console.log("cta.js: Loaded")}(window.banner||(window.banner={}));</script>
+<script type="text/javascript">!function(t){console.log("copy.js: Called");var e=t.copy={};e._content=function(e,l,n,o,i,s,c,y){console.log("copy._content()"),l=utils.pxToPercent(l,"w"),n=utils.pxToPercent(n,"h"),o=utils.pxToPercent(o,"w"),i=utils.pxToPercent(i,"w"),s=utils.pxToPercent(s,"h"),e.style.left=l+"%",e.style.top=n+"%",e.style.width=o+"%",e.style.maxWidth=i+"%",e.style.height=s+"%",e.style.textAlign=c,e.style.fontSize=y+y*t.percentageGrowth+"em",e.style.verticalAlign="middle"},e._content_margin=function(e,l,n,o,i,s,c,y){console.log("copy._content()"),l=utils.pxToPercent(l,"w"),n=utils.pxToPercent(n,"h"),o=utils.pxToPercent(o,"w"),i=utils.pxToPercent(i,"w"),s=utils.pxToPercent(s,"h"),e.style.left=l+"%",e.style.top=n+"%",e.style.width=o+"%",e.style.maxWidth=i+"%",e.style.height=s+"%",e.style.textAlign=c,e.style.fontSize=y+y*t.percentageGrowth+"em",e.style.verticalAlign="middle",e.style.margin="0px"},e._content_margin_bt=function(e,l,n,o,i,s,c,y){console.log("copy._content()"),l=utils.pxToPercent(l,"w"),n=utils.pxToPercent(n,"h"),o=utils.pxToPercent(o,"w"),i=utils.pxToPercent(i,"w"),s=utils.pxToPercent(s,"h"),e.style.left=l+"%",e.style.bottom=n+"%",e.style.width=o+"%",e.style.maxWidth=i+"%",e.style.height=s+"%",e.style.textAlign=c,e.style.fontSize=y+y*t.percentageGrowth+"em",e.style.verticalAlign="middle",e.style.margin="0px"},console.log("copy.js: Loaded")}(window.banner||(window.banner={}));</script>
+
+<!-- Greensock Animation Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+
+<script type="text/javascript">
+  function init() {
+
+    console.log('init()');
+
+    banner.container = {
+      element: document.getElementById('container'),
+    }
+
+    banner.wrapper = {
+      element: document.getElementById('wrapper'),
+    }
+
+    banner.content = {
+      element: document.getElementById('content'),
+    }
+    //My Elements
+
+    banner.frame = {
+      element: document.getElementById('frame'),
+    }
+
+    banner.img1 = {
+      element: document.getElementById('img1'),
+    }
+    banner.img2 = {
+      element: document.getElementById('img2'),
+    }
+
+    banner.black_bg1 = {
+      element: document.getElementById('black_bg1'),
+    }
+
+    banner.black_bg2 = {
+      element: document.getElementById('black_bg2'),
+    }
+
+    banner.headline_1 = {
+      element: document.getElementById('headline_1'),
+    }
+
+    banner.headline_2 = {
+      element: document.getElementById('headline_2'),
+    }
+
+    banner.headline_3 = {
+      element: document.getElementById('headline_3'),
+    }
+
+    banner.black_overlay = {
+      element: document.getElementById('black_overlay'),
+    }
+
+    banner.black_stick = {
+      element: document.getElementById('black_stick'),
+    }
+
+    banner.logo_container = {
+      element: document.getElementById('logo_container'),
+    }
+
+    banner.logo_text = {
+      element: document.getElementById('logo_text'),
+    }
+
+    banner.logo = {
+      element: document.getElementById('logo'),
+    }
+
+    banner.cta_1 = {
+      element: document.getElementById('cta'),
+    }
+
+    banner.ctaShine = {
+      element: document.getElementById('ctaShine'),
+    }
+
+    banner.terms_conditions = {
+      element: document.getElementById('terms_conditions'),
+    }
+
+    banner.exitLink = {
+      element: document.getElementById('exit-link'),
+    }
+
+    banner.backUpImage = {
+      element: document.getElementById('backup-image'),
+    }
+
+    banner.safeArea = {
+      t: 0,
+      r: 0,
+      b: 0,
+      l: 0
+    }
+
+    banner.setup.getContainerSize()
+    banner.setup.setWrapperSize()
+    banner.setup.exitLinkSize()
+    banner.setup.getBreakpoint()
+    banner.setup.percentageGrowth()
+
+    banner.wrapper.layout()
+    banner.wrapper.animation()
+
+    //Exit Handler
+    // function bgExitHandler(e) {
+    //   console.log('Exit Clicked: ' + clickTag);
+    //   window.open(clickTag)
+    // }
+    // banner.exitLink.element.addEventListener('click', bgExitHandler, false);
+
+    //Banner object for de-bugging
+    console.log('banner: ', banner);
+
+  }
+
+
+  // If true, start function. If false, listen for INIT.
+  window.onload = function () {
+    init()
+  }
+
+</script>
+
+</html>
