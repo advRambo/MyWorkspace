@@ -205,24 +205,25 @@ h3 {
 }
 
 .links p {
-    padding: 10px;
-    background-color: #ddd;
-    color: #363636;
+    padding: 0px;
     margin: 0 10px;
-    transition: all .36s ease-in-out;
-}
-
-.links p:hover {
-    background: #67e4d7;
 }
 
 .links p a {
+    padding: 10px;
+    background-color: #ddd;
+    color: #363636;
     text-decoration: none;
     color: inherit;
     font-size: 14px;
     font-family: inherit;
     font-weight: 400;
-    transition: all .63s ease-in;
+    transition: all .36s ease-in;
+}
+
+.links p a:hover {
+    background: #67e4d7;
+    color: #fff
 }
 
 /* .links p:hover a {
