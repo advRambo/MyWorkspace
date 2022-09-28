@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Willy's Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        try {
+            $$preamble$$
+        } catch (e) { }
+        if (typeof (window.HTML5) == 'undefined') {
+            var p = 'https:' == document.location.protocol ? 'https:' : 'http:';
+            document.write('<scr' + 'ipt src="' + p + '//sting.de17a.com/html5.js"></scr' + 'ipt>');
+        } else {
+            window.HTML5.boot(window, window.Sting);
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        "use strict";
+        window.WrapInsideIframe = function (e, o, t) {
+            if (0 <= window.location.href.indexOf(e) && "#iframe" !== window.location.hash) {
+                var i = document.querySelector(t),
+                    n = i.style.width,
+                    r = i.style.height;
+                if (n && r) {
+                    document.body.removeChild(document.querySelector(o));
+                    var d = document.createElement("iframe");
+                    d.style.width = n, d.style.height = r, d.style.border = "none", d.scrolling = "no", d.src = window.location.href + "#iframe", document.body.appendChild(d)
+                }
+            }
+        };
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Gotham-Black';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/Gotham-Black.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gotham-Bold';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/Gotham-Bold.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gotham-Price';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/GothamSerif-Price.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gotham-Medium';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/Gotham-Medium.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gotham-Book';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/Gotham-Book.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gotham-Light';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/Gotham-Light.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'GothamSerif-Bold';
+            src: url('https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/GothamSerif-Bold.otf') format('opentype');
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Gotham-Medium, sans-serif;
+            width: 100%;
+            height: 100%;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            font-family: Gotham-Medium, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body,
+        .container {
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .container,
+        .container1 {
+            width: 100%;
+            position: relative;
+            height: 100%;
+        }
+
+        .product img,
+        .callOut img,
+        .lastProduct img,
+        .logo img,
+        #swedenMeat img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .background img {
+            width: 100%;
+            height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        #cta {
+            border-radius: 2px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .whiteCTA {
+            background: #fff;
+        }
+
+        .red,
+        .whiteCTA {
+            color: #e4051c
+        }
+
+        .redCTA {
+            background: #e4051c;
+            color: #fff
+        }
+
+        .column>div,
+        #cta,
+        .splash_yellow.yellow,
+        .splash_red.red,
+        .price,
+        .quantity {
+            position: absolute;
+        }
+
+        .splash_yellow.yellow~.price .upperText,
+        .splash_red.red~.price .upperText {
+            text-transform: uppercase;
+            font-family: Gotham-Bold;
+        }
+
+        .splash_yellow.yellow~.price .quantity,
+        .splash_red.red~.price .quantity {
+            font-family: Gotham-Bold !important;
+        }
+
+        @media (min-width:320px) and (min-height:320px) {
+            .background {
+                width: 320px;
+                height: 280px
+            }
+
+            .column {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .product {
+                width: 290px;
+                height: 210px;
+                top: 5px;
+                left: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .callOut {
+                width: 280px;
+                height: 115px;
+                top: 15px;
+                left: 15px;
+                z-index: 1;
+                display: flex;
+            }
+
+            .info {
+                top: 160px;
+                left: 20px;
+                max-width: 100%;
+                color: #fff;
+                width: 270px;
+            }
+
+            .firstLine {
+                font-size: 12px;
+                height: 75px;
+                display: flex;
+                align-items: flex-end;
+                line-height: 14px;
+            }
+
+            .secondLine {
+                font-size: 9px;
+                line-height: 12px;
+                margin-top: 0px;
+                height: 25px;
+                font-family: Gotham-Book;
+            }
+
+            #logo {
+                background: #fff;
+                width: 100%;
+                padding: 15px 10px 7px;
+                text-align: center;
+                bottom: 0px;
+            }
+
+            #logo img {
+                width: 119px;
+                height: 23px;
+            }
+
+            #cta {
+                width: 105px;
+                height: 40px;
+                padding: 14px 5px;
+                font-size: 12px;
+                top: 214px;
+                right: 15px;
+                z-index: 1;
+            }
+
+            #swedenflag {
+                width: 25px;
+                height: 15px;
+                position: absolute;
+                top: 29px;
+            }
+
+            #swedenMeat {
+                width: 50px;
+                height: 50px;
+                top: -150px;
+                position: absolute;
+                left: 235px;
+            }
+
+            .ctaSize .product {
+                width: 290px;
+                height: 190px;
+            }
+
+            #head1 {
+                position: relative;
+            }
+
+            .ctaSize .info {
+                width: 175px;
+            }
+
+            .splash_yellow.yellow~.price {
+                width: 84px;
+                height: 54px;
+                top: 27px;
+                left: unset;
+                text-align: center;
+                font-family: Gotham-Price;
+                letter-spacing: -2.1px;
+                display: inline;
+                word-spacing: -1px;
+                line-height: 1;
+            }
+
+            .splash_red.red~.price {
+                width: 120px;
+                height: 50px;
+                top: 25px;
+                left: unset;
+                text-align: center;
+                font-family: Gotham-Price;
+                letter-spacing: -1.9px;
+                display: inline;
+                word-spacing: -1px;
+            }
+
+            .splash_yellow.yellow~.price {
+                color: #e40411;
+            }
+
+            .splash_red.red~.price {
+                color: #fff;
+            }
+
+            .splash_yellow.yellow~.price .dollar {
+                font-size: 60px;
+                line-height: 0.85;
+            }
+
+            .splash_red.red~.price .dollar {
+                font-size: 54px;
+                line-height: 1.4px
+            }
+
+            .splash_yellow.yellow~.price .cents {
+                display: inline;
+                font-size: 30px;
+                vertical-align: 18px;
+                position: relative;
+                text-align: left;
+            }
+
+            .splash_red.red~.price .cents {
+                display: inline;
+                font-size: 38px;
+                vertical-align: 11px;
+                position: relative;
+            }
+
+            .splash_yellow.yellow~.price .quantity {
+                font-size: 7px;
+                top: 39px;
+                left: 2px;
+                letter-spacing: .4px;
+                min-width: 34px;
+                text-align: left;
+                white-space: nowrap;
+                word-spacing: 0px;
+            }
+
+            .splash_red.red~.price .quantity {
+                font-size: 7px;
+                top: 35px;
+                left: 2px;
+                min-width: 33px;
+                text-align: left;
+                white-space: nowrap;
+                letter-spacing: 0.1px;
+                font-family: Gotham-Book !important;
+                word-spacing: -1px;
+            }
+
+            .splash_yellow.yellow~.price .upperText {
+                font-size: 8px;
+                line-height: 1px;
+                letter-spacing: -0.1px;
+                word-spacing: 0;
+            }
+
+            .splash_red.red~.price .upperText {
+                font-size: 8px;
+                line-height: 1px;
+                letter-spacing: -0.5px;
+                white-space: nowrap;
+                word-spacing: 0;
+            }
+
+            .upperText {
+                display: block;
+            }
+
+            .swedenMeat,
+            .hide {
+                display: none
+            }
+
+            .show {
+                display: block
+            }
+
+            .splash_red.red.red,
+            .splash_yellow.yellow {
+                display: inline-block
+            }
+
+            ;
+
+            .splash_yellow,
+            .splash_red {
+                display: none;
+            }
+
+            .left {
+                text-align: left;
+                justify-content: flex-start
+            }
+
+            .right {
+                text-align: right;
+                justify-content: flex-end
+            }
+
+            .center {
+                text-align: center;
+                justify-content: center
+            }
+
+            .splash_yellow.yellow~.price .savings {
+                color: #000;
+                font-size: 7px;
+                position: absolute;
+                font-family: Gotham-Bold;
+                letter-spacing: 0.1px;
+                min-width: 83px;
+                text-align: center;
+                bottom: -6px;
+                text-transform: uppercase;
+                left: 1px;
+                white-space: nowrap;
+                word-spacing: -1px;
+            }
+
+            .splash_red.red~.price .savings {
+                font-family: Gotham-Bold;
+                background: #ffeb17;
+                font-size: 5.7px;
+                color: #e60412;
+                letter-spacing: .1px;
+                min-width: 72px;
+                position: absolute;
+                left: 39px;
+                padding: 2px 2px 1px;
+                bottom: -12px;
+                white-space: nowrap;
+                line-height: 8px;
+                word-spacing: 0px;
+                text-transform: uppercase;
+            }
+
+            .box {
+                min-height: 70px;
+                max-height: 102px;
+                max-width: 290px;
+                bottom: 65px;
+                left: 15px;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .meat {
+                position: relative;
+            }
+
+            #MeatLogo {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            #MeatLogo,
+            .meat {
+                display: none
+            }
+
+            #flag {
+                width: 25px;
+                height: 15px;
+            }
+
+            #MeatLogo {
+                width: 40px;
+                height: 40px;
+            }
+
+            .box h1 {
+                font-size: 11.4px;
+                font-family: Gotham-Medium;
+                line-height: 13px;
+            }
+
+            .box h2 {
+                font-size: 9.5px;
+                line-height: 11px;
+                font-family: gotham-Book;
+            }
+
+            h1 b,
+            h2 b {
+                font-weight: 600;
+                font-family: Gotham-Bold;
+            }
+
+            .ctaSize .info,
+            .ctaSize .box {
+                width: 175px;
+            }
+
+            #column1 {
+                z-index: 1;
+            }
+
+            #column2 {
+                z-index: 2;
+                background: transparent;
+            }
+
+            #column3 {
+                z-index: 3;
+                background: transparent;
+            }
+
+            #body:hover #cta {
+                animation: blink 0.5s ease-out;
+            }
+
+            #callOut2,
+            #callOut3 {
+                left: -500px
+            }
+
+            #product2,
+            #product3 {
+                left: -400px
+            }
+
+            #box2,
+            #box3 {
+                left: -320px
+            }
+
+            .edge .splash_yellow.yellow~.price .quantity {
+                top: 44px
+            }
+
+            .edge .splash_red.red~.price .quantity {
+                top: 39px
+            }
+
+            .splash_yellow.yellow~.price.noOffer {
+                top: 20px
+            }
+
+            .splash_yellow.yellow~.price.noOffer .savings {
+                bottom: -12px
+            }
+        }
+
+        .show,
+        #MeatLogo.show,
+        .meat .show {
+            display: block
+        }
+
+        .hide,
+        .splash_yellow,
+        .splash_red {
+            display: none
+        }
+
+        .safari_only,
+        .mac_firefox {
+            letter-spacing: -0.3px;
+        }
+
+        .safari_only .box {
+            letter-spacing: -1.3px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="container" id="banner" data-bind="style:{ height:Height + 'px', width:Width + 'px' }">
+        <div class="container1">
+            <div class="column ctaSize" id="column1">
+                <div class="background" id="background1">
+                    <img src="background-1.jpg" data-bind="attr: { src:Background1.Value }">
+                </div>
+                <div class="product" id="product1">
+                    <img src="product1.png" data-bind="attr: { src:Product1.Value }">
+                </div>
+                <div class="callOut left" id="callOut1">
+                    <img class="splash_red red" src="call-out-red.png" data-bind="attr: {class: 'splash_red ' + SplashColor1.Value}">
+                    <img class="splash_yellow red" src="call-out-yellow.png" data-bind="attr: {class: 'splash_yellow ' + SplashColor1.Value}">
+                    <div class="price" id="price1">
+                        <span class="upperText" data-bind="text:upperText1.Value"></span>
+                        <span class="dollar" data-bind="text:Dollar1.Value">10</span>
+                        <div class="cents">
+                            <span data-bind="text:Cents1.Value">00</span>
+                            <span class="quantity" data-bind="text:Quantity1.Value">Per förp</span>
+                        </div>
+                        <div class="savings" data-bind="text:Savings1.Value">SPARA 7:90-9:50</div>
+                    </div>
+                </div>
+                <div class="box" id="box1">
+                    <div data-bind="html:ProductDescription1.Value">
+                        <h1>SILL I SMÅGLAS</h1>
+                        <h2>ABBA • Bruttovikt 210-240g Nettovikt 120-240g <br>Jämförpris 43:48-83:33 kr/kg<br><b>Max 5
+                                köp/hushåll</b></h2>
+                    </div>
+                </div>
+                <div class="logo" id="logo">
+                    <img src="willys-logo.png">
+                </div>
+            </div>
+            <div class="column ctaSize" id="column2">
+                <div class="product" id="product2">
+                    <img src="product2.png" data-bind="attr: { src:Product2.Value }">
+                </div>
+                <div class="callOut left" id="callOut2" data-bind="attr: { class: 'callOut ' +  Align2.Value }">
+                    <img class="splash_red yellow" src="call-out-red.png" data-bind="attr: {class: 'splash_red ' + SplashColor2.Value}">
+                    <img class="splash_yellow yellow" src="call-out-yellow.png" data-bind="attr: {class: 'splash_yellow ' + SplashColor2.Value}">
+                    <div class="price" id="price1">
+                        <span class="upperText" data-bind="text:upperText2.Value">3 FÖR</span>
+                        <span class="dollar" data-bind="text:Dollar2.Value">33</span>
+                        <div class="cents">
+                            <span data-bind="text:Cents2.Value">00</span>
+                            <span class="quantity" data-bind="text:Quantity2.Value">+ pant</span>
+                        </div>
+                        <div class="savings" data-bind="text:Savings2.Value">SPARA 17:40</div>
+                    </div>
+                </div>
+                <div class="box" id="box2">
+                    <div data-bind="html:ProductDescription2.Value">
+                        <h1>COCA-COLA, FANTA, SPRITE</h1>
+                        <h2>COCA-COLA • 1,5L <br>Jämförpris 7:33 kr/l +pant<br><b>Max 3 köp/hushåll</b></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="column ctaSize" id="column3">
+                <div class="product" id="product3">
+                    <img src="product3.png" data-bind="attr: { src:Product3.Value }">
+                </div>
+                <div class="callOut left" id="callOut3" data-bind="attr: { class: 'callOut ' +  Align3.Value }"> 
+                        <img class="splash_red yellow" src="call-out-red.png" data-bind="attr: {class: 'splash_red ' + SplashColor3.Value}">
+                        <img class="splash_yellow yellow" src="call-out-yellow.png" data-bind="attr: {class: 'splash_yellow ' + SplashColor3.Value}">
+                    <div class="price" id="price1">
+                        <span class="upperText" data-bind="text:upperText3.Value"></span>
+                        <span class="dollar" data-bind="text:Dollar3.Value">69</span>
+                        <div class="cents">
+                            <span data-bind="text:Cents3.Value">90</span> 
+                            <span class="quantity" data-bind="text:Quantity3.Value">Per kg</span> 
+                        </div>
+                        <div class="savings" data-bind="text:Savings3.Value">SPARA 49:10 PER KG</div>
+                    </div>
+                </div>
+                <div class="box" id="box3">
+                    <div data-bind="html:ProductDescription3.Value">
+                        <h1>FÄRSK LAMMSTEK MED BEN</h1>
+                        <h2>FARMERS • Nya Zeeland • Ca 1,6kg <br>Jämförpris 69:90 per kg <br><b>Max 3 förp/hushåll</b></h2>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="cta" class="button whiteCTA" data-bind="attr: { class: 'button ' + ctaColor.Value }">
+                <span data-bind="text:ButtonLabel.Value">Börja handla</span>
+            </a>
+        </div>
+    </div>
+    <script>function
+            start() {
+            $(".button").find("span").text().length ? ($(".button").show(), $(".column").addClass("ctaSize")) : $(".button").hide()
+        }
+
+        function pageLoadedHandler() {
+            TweenLite.to("body", 2, {
+                onComplete: function () {
+                    processProd(1, 2, function () {
+                        processProd(2, 3, function () {
+                            processProd(3, 1, function () {
+                                processProd(1, 2, function () {
+                                    processProd(2, 3, function () {
+                                        processProd(3, 1)
+                                    })
+                                })
+                            })
+                        })
+                    })
+                }
+            })
+        }
+
+        function productOut(e) {
+            TweenLite.to(e, 1.2, {
+                left: 320,
+                ease: Sine.easeIn
+            })
+        }
+
+        function productIn(e, t) {
+            $(e).css("left", -400), TweenLite.to(e, 1.4, {
+                left: 15,
+                ease: Sine.easeOut
+            }), t && TweenLite.to("body", 0, {
+                delay: "2.0",
+                onComplete: t
+            })
+        }
+
+        function blink(e) {
+            TweenLite.to(e, .15, {
+                delay: "0.15",
+                scale: .95
+            }), TweenLite.to(e, .15, {
+                delay: "0.30",
+                scale: 1
+            })
+        }
+
+        function splashOut(e) {
+            TweenLite.to(e, 1.2, {
+                left: 400,
+                ease: Sine.easeIn
+            })
+        }
+
+        function splashIn(e) {
+            $(e).css("left", -500), TweenLite.to(e, 1.4, {
+                left: 15,
+                ease: Sine.easeOut
+            })
+        }
+
+        function descOut(e) {
+            TweenLite.to(e, .5, {
+                left: 40,
+                opacity: 0,
+                ease: Sine.easeIn
+            })
+        }
+
+        function descIn(e) {
+            $(e).css({
+                left: -320,
+                opacity: 1
+            }), TweenLite.to(e, 1.4, {
+                left: 15,
+                ease: Sine.easeOut
+            })
+        }
+
+        function swipe(e, t, n) {
+            var o = "#callOut" + e,
+                s = "#box" + e,
+                c = "#callOut" + t,
+                i = "#box" + t,
+                u = "#product" + t;
+            productOut("#product" + e), splashOut(o), descOut(s), TweenLite.to("body", 0, {
+                delay: "0.3",
+                onComplete: function () {
+                    productIn(u, n), splashIn(c), descIn(i)
+                }.bind(u, c, i, n)
+            })
+        }
+
+        function processProd(e, t, n) {
+            blink("#callOut" + e), TweenLite.to("body", 0, {
+                delay: "1",
+                onComplete: function () {
+                    swipe(e, t, n)
+                }.bind(e, t, n)
+            })
+        }
+        document.getElementById("body").onclick = function () {
+            window.open(html5.getClickTag(), "_blank")
+        }, start(), $(".upperText").each(function () {
+            $(this).text().length || $(this).parent().addClass("noOffer")
+        });
+    </script>
+    <script>
+        window.onload = function () {
+            navigator.userAgent.includes("Windows") || window.chrome || navigator.userAgent.includes("Firefox") || $("body").addClass("safari_only"), !navigator.userAgent.includes("Windows") && navigator.userAgent.includes("Firefox") && $("body").addClass("mac_firefox"), (navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Edge")) && $("body").addClass("edge"), window.WrapInsideIframe("//cdn.proofhq.com", ".container", ".container"), pageLoadedHandler()
+        };
+    </script>
+</body>
+
+</html>

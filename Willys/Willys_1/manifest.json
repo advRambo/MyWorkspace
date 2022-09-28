@@ -1,0 +1,10 @@
+{
+  "title": "Willys",
+  "description": "Version v.17 mobile",
+  "width": 320,
+  "height": 320,
+  "source": "index.html",
+  "clicktags": {
+    "clickTAG": "http://willys.se"
+  }
+}

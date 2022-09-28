@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>My Work Samples</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <link rel="stylesheet" href="fonts.css">
  <link rel="stylesheet" href="style.css">
  
@@ -36,18 +37,23 @@
     
         <h2>FILTER</h2>
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('Banner01')"> Animated Banner 01</button>
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('Banner01')"> Animated Banner 01</button>
           <button class="btn" onclick="filterSelection('Banner02')"> Animated Banner 02</button>
           <button class="btn" onclick="filterSelection('Banner03')"> Animated Banner 03</button>
-          <button class="btn" onclick="filterSelection('Banner04')"> Web Pages</button>
-          <button class="btn" onclick="filterSelection('Banner05')"> Hosted Websites</button>
-          <button class="btn" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('Banner04')"> Animated Banner 04</button>
+          <button class="btn" onclick="filterSelection('Banner05')"> Web Pages</button>
+          <button class="btn" onclick="filterSelection('Banner06')"> Hosted Websites</button>
           <!-- <button class="btn" onclick="filterSelection('Dotcom')"> Dotcom</button>
           <button class="btn" onclick="filterSelection('Facebook')"> Facebook</button>
           <button class="btn" onclick="filterSelection('Email')"> Email</button> -->
           <!-- <button class="btn" onclick="filterSelection('LUX')"> LUX</button>
           <button class="btn" onclick="filterSelection('NED')"> NED</button> -->
         </div>
+        
+        <!---------------------->
+        <!--ANIMATED BANNER 01-->
+        <!---------------------->
         <div class="row">
           <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner01">
 
@@ -75,8 +81,11 @@
             <iframe src="Daimler_Banners/960x250_ADZU_STANDARD/index.html" width=" 960" height=" 250" frameborder="0" scrolling="no"></iframe> 
             <p> Banner_960 x 250 </p> 
           </div>
-        
         </div>
+
+        <!---------------------->
+        <!--ANIMATED BANNER 02-->
+        <!---------------------->
         <div class="row">
           <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner02">
 
@@ -104,82 +113,108 @@
             <iframe src="Skoda_Banners/index.html" width=" 728" height=" 90" frameborder="0" scrolling="no"></iframe> 
             <p> Banner_728 x 90</p> 
           </div>
-        
         </div>
+
+        <!---------------------->
+        <!--ANIMATED BANNER 03-->
+        <!----------------------> 
         <div class="row">
           <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner03">
 
           <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/160x600/index.html" width=" 160" height=" 600" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_160 x 600 </p> 
+            <iframe src="Willys/Willys_1/index.html" width=" 320" height=" 320" frameborder="0" scrolling="yes"></iframe> <p> Webpage 01 </p> 
           </div>
           <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/300x600/index.html" width=" 300" height=" 600" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_300 x 600 </p> 
+            <iframe src="Willys/Willys_2/index.html" width=" 320" height=" 320" frameborder="0" scrolling="yes"></iframe> <p> Webpage 02 </p> 
           </div>
           <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/320x320/index.html" width=" 320" height=" 320" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_320 x 320 </p> 
+            <iframe src="Willys/Willys_3/index.html" width=" 980" height=" 240" frameborder="0" scrolling="yes"></iframe> <p> Webpage 03 </p> 
           </div>
-          <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/300x250/index.html" width=" 300" height=" 250" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_300 x 250 </p> 
-          </div>
-          <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/VF_Lense_300x300/index.html" width=" 300" height=" 300" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_300 x 300 </p> 
-          </div>
-          <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/320x160/index.html" width=" 320" height=" 160" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_320 x 160 </p> 
-          </div>
-          <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/980x240/index.html" width=" 980" height=" 240" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_980 x 240 </p> 
-          </div>
-          <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/980x300/index.html" width=" 980" height=" 300" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_980 x 300 </p> 
-          </div>
-          <div class="bannerCard column Banner03"> 
-            <iframe src="Vattenfall_Banners/980x600/index.html" width=" 980" height=" 600" frameborder="0" scrolling="no"></iframe> 
-            <p> Banner_980 x 600 </p> 
-          </div>
-        
         </div>
+
+        <!---------------------->
+        <!--ANIMATED BANNER 04-->
+        <!----------------------> 
         <div class="row">
           <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner04">
 
           <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/160x600/index.html" width=" 160" height=" 600" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_160 x 600 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/300x600/index.html" width=" 300" height=" 600" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_300 x 600 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/320x320/index.html" width=" 320" height=" 320" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_320 x 320 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/300x250/index.html" width=" 300" height=" 250" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_300 x 250 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/VF_Lense_300x300/index.html" width=" 300" height=" 300" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_300 x 300 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/320x160/index.html" width=" 320" height=" 160" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_320 x 160 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/980x240/index.html" width=" 980" height=" 240" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_980 x 240 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/980x300/index.html" width=" 980" height=" 300" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_980 x 300 </p> 
+          </div>
+          <div class="bannerCard column Banner04"> 
+            <iframe src="Vattenfall_Banners/980x600/index.html" width=" 980" height=" 600" frameborder="0" scrolling="no"></iframe> 
+            <p> Banner_980 x 600 </p> 
+          </div>
+        </div>
+
+        <!---------------------->
+        <!-------WEBPAGES------->
+        <!----------------------> 
+        <div class="row">
+          <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner05">
+
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/index.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 01 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/about.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 02 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/articleDetail.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 03 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/casestudy.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 04 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/people.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 05 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/perspective.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 06 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/perspectiveArchive.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 07 </p> 
           </div>
-          <div class="bannerCard column Banner04"> 
+          <div class="bannerCard column Banner05"> 
             <iframe src="Javelin_WebPages/work.html" width=" 1020" height=" 1020" frameborder="0" scrolling="yes"></iframe> <p> Webpage 08 </p> 
           </div>
         </div>
-        
-        <div class="row">
-            <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner05">
 
-            <div class="bannerCard column Banner05"> 
+        <!---------------------->
+        <!-------WEBSITES------->
+        <!----------------------> 
+        <div class="row">
+            <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner06">
+
+            <div class="bannerCard column Banner06"> 
             <h3> Hosted Websites </h3>
             <div class="links">
               <p><a href="https://mvjmc.edu.in/" target="_blank"> Website 1</a></p>
@@ -193,40 +228,16 @@
             </div>
             </div>
 
-          </div>
-           <div class="row">
-            <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner05"/>
-          </div>
-        
-        <!--   
-        <div class="row">
-          <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Dotcom">
-            
-          <div class="bannerCard column Dotcom"> <iframe src="Dotcom/1000x298/index.html" width="1000" height="298" frameborder="0" scrolling="no"></iframe> <p> Dotcom_1000 x 298  | <br> <a href="Dotcom/1000x298.zip">| DOWNLOAD |</a> </p> </div>
-
         </div>
-        -->
-        <!-- <div class="row">
-          <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Facebook">
-
-          <div class="bannerCard column Facebook"> <iframe src="Facebook/320x565/index.html" width="320" height="565" frameborder="0" scrolling="no"></iframe> <p> Facebook_320 x 565  | <br> <a href="Facebook/320x565.zip">| DOWNLOAD |</a> </p> </div>
-              
-          <div class="bannerCard column Facebook"> <iframe src="Facebook/320x545/index.html" width="320" height="545" frameborder="0" scrolling="no"></iframe> <p> Facebook_320 x 545  | <br> <a href="Facebook/320x545.zip">| DOWNLOAD |</a> </p> </div>
-
-          <div class="bannerCard column Facebook"> <iframe src="Facebook/375x490/index.html" width="375" height="490" frameborder="0" scrolling="no"></iframe> <p> Facebook_375 x 490  | <br> <a href="Facebook/375x490.zip">| DOWNLOAD |</a> </p> </div>
-
-        </div>
-      
-      
-      
         <div class="row">
-            <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Email">
+          <hr style="width:100%;text-align:left;margin-left:0" class="bannerCard column Banner07"/>
+        </div>
 
-            <div class="bannerCard column Email"> <iframe src="Email/640x1850/index.html" width="640" height="1850" frameborder="0" scrolling="no"></iframe> <p> Email_640 x 1850  | <br> <a href="Email/640x1850.zip">| DOWNLOAD |</a> </p> </div>
-            <div class="bannerCard column Email"> <iframe src="Email/320x2200/index.html" width="320" height="2200" frameborder="0" scrolling="no"></iframe> <p> Email_640 x 2000  | <br> <a href="Email/320x2200.zip">| DOWNLOAD |</a> </p> </div>
-
-        </div> -->
-      </div> 
+      <div class="backToTop" id="backToTop">
+        <a href="#container">
+          <img src="./top.png">
+        </a>
+      </div>
   </div>
 
 </body>
@@ -279,7 +290,14 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-  
-
+  // if(window.innerHeight > 300){
+  //   alert(window.innerHeight)
+  // }
  </script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $("#backToTop").hide(),
+        $(function(){$(window).scroll(function(){$(this).scrollTop()>150?$("#backToTop").fadeIn():$("#backToTop").fadeOut()}),
+        $("#backToTop a").click(function(){return $("body,html").animate({scrollTop:0},800),!1})})});
+  </script> 
 </html>

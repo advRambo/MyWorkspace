@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Willy's Master</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        type="text/javascript">try { $$preamble$$ } catch (e) { } if (typeof (window.HTML5) == 'undefined') { var p = 'https:' == document.location.protocol ? 'https:' : 'http:'; document.write('<scr' + 'ipt src="' + p + '//sting.de17a.com/html5.js"></scr' + 'ipt>'); } else { window.HTML5.boot(window, window.Sting); }</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>"use strict"; window.WrapInsideIframe = function (e, o, t) { if (0 <= window.location.href.indexOf(e) && "#iframe" !== window.location.hash) { var i = document.querySelector(t), n = i.style.width, r = i.style.height; if (n && r) { document.body.removeChild(document.querySelector(o)); var d = document.createElement("iframe"); d.style.width = n, d.style.height = r, d.style.border = "none", d.scrolling = "no", d.src = window.location.href + "#iframe", document.body.appendChild(d) } } }; </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="body">
+    <div class="container" id="container" data-bind="style:{height:Height + 'px', width:Width + 'px'}">
+        <div class="img-banner container1" id="banner"> <img src="images/background.png" id="backgroundMain">
+            <div class="column" id="column1">
+                <div class="callOut left" id="callOut1" data-bind="attr:{class: 'callOut ' + Align1.Value}"> <img
+                        src="images/callout1.png"> </div>
+            </div>
+            <div class="column" id="column2">
+                <div class="callOut left" id="callOut2" data-bind="attr:{class: 'callOut ' + Align2.Value}"> <img
+                        src="images/callout2.png"> </div>
+            </div>
+            <div class="column" id="column3">
+                <div class="callOut left" id="callOut3" data-bind="attr:{class: 'callOut ' + Align2.Value}"> <img
+                        src="images/callout3.png"> </div>
+            </div>
+            <div class="column" id="column4"> </div>
+        </div>
+        <div class="popupWindow" id="popupWindow"> <img src="images/popup.png" id="popup"> <img src="images/button.png"
+                id="cta" class="button whiteCTA"> </div><img src="images/cursor.png" id="cursor">
+    </div>
+    <script>document.getElementById("container").onclick = function () { window.open(html5.getClickTag(), "_blank") }; var loop = 0; function cursorAnimation() { TweenLite.to(cursor, .7, { top: 185, left: 380, ease: Sine.easeOut }), TweenLite.to(cta, .25, { delay: "0.85", scale: .8 }), TweenLite.to(cta, .25, { delay: "0.9", scale: 1 }), TweenLite.to(cursor, 1, { delay: "1.7", top: 250, left: 410, ease: Sine.easeOut }), loop++ < 1 && TweenLite.to(popupWindow, 0, { delay: "4", onComplete: popupBounceOut }) } function popupBounceIn() { TweenLite.to(popupWindow, .4, { top: -233, ease: Sine.easeOut }), TweenLite.to(popupWindow, .2, { delay: "0.4", top: -225, ease: Sine.easeOut }), TweenLite.to(popupWindow, 0, { delay: "0.8", onComplete: cursorAnimation }) } function popupBounceOut() { TweenLite.to(popupWindow, .2, { top: -233, ease: Sine.easeOut }), TweenLite.to(popupWindow, .5, { delay: "0.2", top: 0, ease: Sine.easeIn }), TweenLite.to(popupWindow, 0, { delay: "1.5", onComplete: startAnimate }) } function blinkSplash(e, o) { TweenLite.to(e, .15, { delay: "0.15", scale: .93 }), TweenLite.to(e, .15, { delay: "0.30", scale: 1 }), o && TweenLite.to(popupWindow, 0, { delay: "1", onComplete: o }) } function startAnimate() { blinkSplash(callOut1, function () { blinkSplash(callOut2, function () { blinkSplash(callOut3, popupBounceIn) }) }) } function pageLoadedHandler() { TweenLite.to(body, 0, { delay: "1", onComplete: startAnimate }) }</script>
+    <script>window.onload = function () { navigator.userAgent.includes("Windows") || window.chrome || navigator.userAgent.includes("Firefox") || $("body").addClass("safari_only"), !navigator.userAgent.includes("Windows") && navigator.userAgent.includes("Firefox") && $("body").addClass("mac_firefox"), (navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Edge")) && $("body").addClass("edge"), window.WrapInsideIframe("//cdn.proofhq.com", ".container", ".container"), pageLoadedHandler() };</script>
+</body>
+
+</html>

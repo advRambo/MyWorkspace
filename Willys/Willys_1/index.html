@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Willy's Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        type="text/javascript">try { $$preamble$$ } catch (e) { } if (typeof (window.HTML5) == 'undefined') { var p = 'https:' == document.location.protocol ? 'https:' : 'http:'; document.write('<scr' + 'ipt src="' + p + '//sting.de17a.com/html5.js"></scr' + 'ipt>'); } else { window.HTML5.boot(window, window.Sting); }</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>"use strict"; window.WrapInsideIframe = function (e, o, t) { if (0 <= window.location.href.indexOf(e) && "#iframe" !== window.location.hash) { var i = document.querySelector(t), n = i.style.width, r = i.style.height; if (n && r) { document.body.removeChild(document.querySelector(o)); var d = document.createElement("iframe"); d.style.width = n, d.style.height = r, d.style.border = "none", d.scrolling = "no", d.src = window.location.href + "#iframe", document.body.appendChild(d) } } }; </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="body">
+    <div class="container" id="banner" data-bind="style:{height:Height + 'px', width:Width + 'px'}">
+        <div class="container1">
+            <div class="column ctaSize" id="column1">
+                <div class="background" id="background1"> <img src="images/background.png"
+                        data-bind="attr:{src:Background1.Value}"> </div>
+                <div class="product left" id="product1"> <img src="images/product1.png"
+                        data-bind="attr:{src:Product1.Value}"> </div>
+                <div class="callOut left" id="callOut1"> <img src="images/callout1.png"
+                        data-bind="attr:{class: 'splash_red ' + SplashColor1.Value}"> </div>
+                <div class="box" id="box1"> <img src="images/box1.png"> </div>
+                <div class="logo" id="logo"> <img src="images/willysLogo.png"> </div>
+            </div>
+            <div class="column ctaSize" id="column2">
+                <div class="product" id="product2"> <img src="images/product2.png"
+                        data-bind="attr:{src:Product2.Value}"> </div>
+                <div class="callOut left" id="callOut2" data-bind="attr:{class: 'callOut ' + Align2.Value}"> <img
+                        src="images/callout2.png" data-bind="attr:{class: 'splash_yellow ' + SplashColor2.Value}">
+                </div>
+                <div class="box" id="box2"> <img src="images/box2.png"> </div>
+            </div>
+            <div class="column ctaSize" id="column3">
+                <div class="product" id="product3"> <img src="images/product3.png"
+                        data-bind="attr:{src:Product3.Value}"> </div>
+                <div class="callOut left" id="callOut3" data-bind="attr:{class: 'callOut ' + Align3.Value}"> <img
+                        src="images/callout3.png" data-bind="attr:{class: 'splash_red ' + SplashColor3.Value}"> </div>
+                <div class="box" id="box3"> <img src="images/box3.png"> </div>
+            </div><a href="#" id="cta" class="button whiteCTA" data-bind="attr:{class: 'button ' + ctaColor.Value}">
+                <img src="images/button.png"> </a>
+        </div>
+    </div>
+    <script>function pageLoadedHandler() { TweenLite.to("body", 2, { onComplete: function () { processProd(1, 2, function () { processProd(2, 3, function () { processProd(3, 1, function () { processProd(1, 2, function () { processProd(2, 3, function () { processProd(3, 1) }) }) }) }) }) } }) } function productOut(e) { TweenLite.to(e, 1.2, { left: 320, ease: Sine.easeIn }) } function productIn(e, t) { $(e).css("left", -400), TweenLite.to(e, 1.4, { left: 15, ease: Sine.easeOut }), t && TweenLite.to("body", 0, { delay: "2.0", onComplete: t }) } function blink(e) { TweenLite.to(e, .15, { delay: "0.15", scale: .95 }), TweenLite.to(e, .15, { delay: "0.30", scale: 1 }) } function splashOut(e) { TweenLite.to(e, 1.2, { left: 400, ease: Sine.easeIn }) } function splashIn(e) { $(e).css("left", -500), TweenLite.to(e, 1.4, { left: 15, ease: Sine.easeOut }) } function descOut(e) { TweenLite.to(e, .5, { left: 40, opacity: 0, ease: Sine.easeIn }) } function descIn(e) { $(e).css({ left: -320, opacity: 1 }), TweenLite.to(e, 1.4, { left: 15, ease: Sine.easeOut }) } function swipe(e, t, n) { var o = "#callOut" + e, s = "#box" + e, c = "#callOut" + t, i = "#box" + t, l = "#product" + t; productOut("#product" + e), splashOut(o), descOut(s), TweenLite.to("body", 0, { delay: "0.3", onComplete: function () { productIn(l, n), splashIn(c), descIn(i) }.bind(l, c, i, n) }) } function processProd(e, t, n) { blink("#callOut" + e), TweenLite.to("body", 0, { delay: "1", onComplete: function () { swipe(e, t, n) }.bind(e, t, n) }) } document.getElementById("body").onclick = function () { window.open(html5.getClickTag(), "_blank") }, start(), $(".upperText").each(function () { $(this).text().length || $(this).parent().addClass("noOffer") });</script>
+    <script>window.onload = function () { window.WrapInsideIframe("//cdn.proofhq.com", ".container", ".container"), pageLoadedHandler() };</script>
+</body>
+
+</html>

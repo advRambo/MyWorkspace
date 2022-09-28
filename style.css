@@ -19,7 +19,8 @@ body {
     width: 100%;
 }
 
-.logo img {
+.logo img,
+.backToTop a img {
     width: 100%;
     height: 100%;
 }
@@ -107,6 +108,7 @@ iframe {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .bannerCard {
@@ -225,6 +227,19 @@ h3 {
     background: #67e4d7;
     color: #fff
 }
+
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    padding: 2px;
+    right: 50px;
+    z-index: 999999;
+    max-width: 50px;
+}
+
+
+
+
 
 /* .links p:hover a {
     font-weight: 600;

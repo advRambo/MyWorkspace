@@ -1,0 +1,191 @@
+{
+	Width: 320,
+	Height: 320,
+
+	Background1: {
+		VariableType: "Image",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Product1: {
+		VariableType: "Image",
+		Value: "",
+		Metadata: {	}
+	},
+
+	SplashColor1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Align1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+		
+	upperText1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Dollar1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Cents1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+	
+	Quantity1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Savings1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	ProductDescription1: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Product2: {
+		VariableType: "Image",
+		Value: "",
+		Metadata: {	}
+	},
+
+	SplashColor2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Align2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},	
+
+	upperText2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+	
+	Dollar2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Cents2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+	
+	Quantity2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Savings2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+	
+	ProductDescription2: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Product3: {
+		VariableType: "Image",
+		Value: "",
+		Metadata: {	}
+	},
+
+	SplashColor3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Align3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	upperText3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Dollar3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Cents3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+	
+	Quantity3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	Savings3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	ProductDescription3: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+
+	ClickTag: {
+		VariableType: "Link",
+		Value: "",
+		Metadata: {	}
+	},
+
+	ctaColor: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	},
+	
+	ButtonLabel: {
+		VariableType: "Text",
+		Value: "",
+		Metadata: {	}
+	}	
+
+}
