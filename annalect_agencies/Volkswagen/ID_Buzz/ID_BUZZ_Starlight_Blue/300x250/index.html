@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="ad.size" content="width=300,height=250" />
+
+  <title>Volkswagen ID.BUZZ Launch</title>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body style="visibility: hidden;">
+  <div id="banner" class="adSize posAbsolute lt0">
+
+    <!-- Frame 1 -->
+    <div id="frame1" class="adSize posAbsolute lt0 flowHidden">
+      <div id="bg1" class="adSize posAbsolute lb0 bg1">
+      </div>
+      <div id="logoBlack" class="adSize posAbsolute lt0">
+        <img src="logo_black.png" class="w100">
+      </div>
+      <div id="car1" class="adSize posAbsolute lt0">
+        <div id="shadow1" class="shadow posAbsolute bg1"></div>
+        <div id="car_yellow" class="adSize posAbsolute lt0 ">
+          <img src="car1.png" class="w100">
+        </div>
+      </div>
+      <div id="wheel1left" class="posAbsolute lt0">
+        <img src="wheel.png" class="w100">
+      </div>
+      <div id="wheel1right" class="posAbsolute lt0">
+        <img src="wheel.png" class="w100">
+      </div>
+
+    </div>
+    <!-- Frame 2 -->
+    <div id="frame2" class="adSize posAbsolute lt0 flowHidden">
+      <div id="bg2" class="adSize posAbsolute w100 lb0 bg2">
+      </div>
+      <div class="logoCommon adSize posAbsolute lt0">
+        <img src="logo_white.png" class="w100">
+      </div>
+      <div id="car2" class="adSize posAbsolute lt0">
+        <div id="shadow2" class="shadow posAbsolute bg2"></div>
+        <div id="car_teal" class="posAbsolute lt0">
+          <img src="car2.png" class="w100">
+        </div>
+      </div>
+      <div id="wheel2left" class="posAbsolute lt0">
+        <img src="wheel.png" class="w100">
+      </div>
+      <div id="wheel2right" class="posAbsolute lt0">
+        <img src="wheel.png" class="w100">
+      </div>
+    </div>
+    <div id="frame3" class="adSize posAbsolute lt0 flowHidden">
+      <div id="bg3" class="adSize posAbsolute w100 lb0 bg3">
+      </div>
+      <div class="logoCommon adSize posAbsolute lt0">
+        <img src="logo_white.png" class="w100">
+      </div>
+      <div id="car3" class="adSize posAbsolute lt0">
+        <div id="shadow3" class="shadow posAbsolute bg3"></div>
+        <div id="car_orange" class="posAbsolute lt0">
+          <img src="car3.png" class="w100">
+        </div>
+      </div>
+      <div id="wheel3left" class="posAbsolute lt0">
+        <img src="wheel.png" class="w100">
+      </div>
+      <div id="wheel3right" class="posAbsolute lt0">
+        <img src="wheel.png" class="w100">
+      </div>
+    </div>
+
+
+    <!-- Frame 4 -->
+    <div id="frame4" class="adSize posAbsolute lt0">
+      <!-- dealer -->
+      <div id=" dealerContent" class="adSize posAbsolute lt0">
+        <ul id="dealerList" class="regFont posAbsolute">
+          <li id="dealer_headline"> Your Volkswagen Dealer </li>
+          <li id="dealer_name"> Testing Longest Volkswagen Dealership </li>
+          <li id="dealer_address1"> Corner of Transporter Drive </li>
+          <li id="dealer_address2"> and Passat Road, Amarok City </li>
+          <li id="dealer_phone"> 1234 444 999 </li>
+          <li id="dealer_license"> DL1234567 </li>
+        </ul>
+      </div>
+      <div id="carDivBig" class="adSize posAbsolute">
+        <div id="shadow4" class="shadowSmall posAbsolute"></div>
+        <div id="carDiv" class="adSize posAbsolute">
+          <img src="car.png" class="w100">
+        </div>
+      </div>
+      <div id="leftWheelBox" class="car_wheel_container posAbsolute">
+        <img id="leftWheel" class="w100" src="wheel.png" />
+      </div>
+      <div id="rightWheelBox" class="car_wheel_container posAbsolute">
+        <img id="rightWheel" class="w100" src="wheel.png" />
+      </div>
+    </div>
+
+    <!-- Common Elements -->
+    <div id="commonElements" class="adSize posAbsolute lt0">
+      <div id="text1" class="adSize posAbsolute w100">
+        <img src="text1.png" class="w100">
+      </div>
+      <!-- T&Cs -->
+      <div id="legalBox" class="adSize posAbsolute">
+
+        <div id="exitLink" class="adSize posAbsolute lt0"></div>
+        <!-- <a id="tc_close" class="regFont posAbsolute" href="#">Close T&Cs</a> -->
+
+        <!-- <div id="tc_open" class="regFont posAbsolute" href="#"><sup>~</sup><span>View T&Cs</span></div> -->
+        <div id="ctaBox" class="ctaCommon posAbsolute hide">
+          <div id="ctaCopy">Learn more</div>
+        </div>
+        <div id="ctaBlueBox" class="ctaCommon posAbsolute">
+          <div id="ctaWhiteCopy">Learn more</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var clickTag = "https://www.google.com";
+    var clickArea = document.getElementById("exitLink");
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank");
+    };
+  </script>
+</body>
+
+</html>
