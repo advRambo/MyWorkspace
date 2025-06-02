@@ -1,0 +1,26 @@
+/* @font-face {
+    font-family: 'VW';
+    src: url() format("woff"), url(https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/VWText-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'VW';
+    src: url() format("woff"), url(https://s3.eu-central-1.amazonaws.com/adzu-banner-assets/VWHead-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+} */
+@font-face {
+    font-family: "CircularStd-Medium";
+    src: url("fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CircularStd-Black";
+    src: url("path/CircularStd-Black.otf") format("opentype");
+    font-weight: 700;
+    font-style: bold;
+}

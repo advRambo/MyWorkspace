@@ -1,0 +1,168 @@
+html,
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "CircularStd-Medium", arial;
+  font-weight: 400;
+  color: #fff;
+}
+
+html,
+.masterSize {
+  width: 300px;
+  height: 250px;
+}
+
+span {
+  display: inline-block;
+}
+
+#banner {
+  background: #d22030;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #515151;
+  box-sizing: border-box;
+}
+
+.cMedium {
+  font-family: "CircularStd-Medium";
+  font-weight: 400;
+}
+
+.cBold {
+  font-family: "CircularStd-Black";
+  font-weight: 700;
+}
+
+.w100 {
+  width: 100%;
+  height: 100%;
+}
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.lt0 {
+  top: 0px;
+  left: 0px;
+}
+
+#logo_img {
+  top: 115px;
+  width: 163px;
+  height: auto;
+  left: 71px;
+}
+
+#copy1_a {
+  top: 66px;
+  left: 93px;
+  font-size: 24px;
+  letter-spacing: 2.1px;
+  width: 116px;
+}
+
+#copy1_b {
+  top: 94px;
+  left: 50.5px;
+  font-size: 24px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  width: 200px;
+  line-height: 1.19;
+}
+
+#copy2_a {
+  top: 79px;
+  left: 36px;
+  font-size: 24px;
+  letter-spacing: 1.45px;
+  width: 236px;
+}
+
+#copy2_b {
+  top: 107px;
+  left: 35px;
+  font-size: 24px;
+  letter-spacing: 1.55px;
+  width: 236px;
+}
+
+#copy2_c {
+  top: 135px;
+  left: 34px;
+  font-size: 24px;
+  letter-spacing: 1.65px;
+  width: 236px;
+}
+
+#copy3_a {
+  top: 54px;
+  left: 87px;
+  font-size: 24.5px;
+  letter-spacing: 0.6px;
+  width: 136px;
+}
+#copy3_b {
+  top: 96px;
+  left: 25px;
+  width: 247px;
+  height: 46px;
+}
+#copy3_c {
+  top: 150px;
+  left: 40px;
+  font-size: 24px;
+  letter-spacing: 1.35px;
+  width: 220px;
+
+  /* top: 131px;
+    left: 97px;
+    font-size: 24px;
+    letter-spacing: 1.35px;
+    width: 116px; */
+}
+#copy3_d {
+  top: 174px;
+  left: 94px;
+  font-size: 24px;
+  letter-spacing: 3.25px;
+  width: 126px;
+}
+#logo_top {
+  top: 23px;
+  left: 171px;
+  width: 105px;
+  height: auto;
+  position: absolute;
+}
+#ctaBox {
+  left: 166px;
+  top: 204px;
+  width: 120px;
+  height: 100px;
+}
+#learnMore {
+  left: 1px;
+  top: 4.5px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+#cta {
+  width: 24.5px;
+  height: auto;
+  top: 1px;
+  left: 84px;
+}

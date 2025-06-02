@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'LevSerifBold';
+
+  src: url('fonts/LevSerif-Bold.otf') format('opentype');
+  /* src: url('https://content.martinwilliams.com/general-mills/MWMN-P00004245/fonts/LevSerifBold/LevSerifBold.otf') format("opentype"),
+         url('https://content.martinwilliams.com/general-mills/MWMN-P00004245/fonts/1/LevSerifBold.otf') format('opentype'); */
+
+  font-weight: 700;
+
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'PorterRegular';
+
+  src: url('fonts/PorterRegular.otf') format('opentype');
+  /* src: url('https://content.martinwilliams.com/general-mills/MWMN-P00004245/fonts/PorterRegular.otf')
+    format('opentype'); */
+
+  font-weight: 700;
+
+  font-style: bold;
+}

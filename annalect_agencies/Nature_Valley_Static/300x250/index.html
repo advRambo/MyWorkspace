@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="ad.size" content="width=300,height=250" />
+
+  <title>Nature Valley</title>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <link type="text/css" rel="stylesheet" href="fonts.css" />
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div id="banner" class="masterSize posAbsolute lt0">
+
+    <!--Background strip-->
+    <div id="stripe" class="stripes masterSize posAbsolute">
+      <img src="./images/StripesPSD.png" id="stripes_img" class="posAbsolute" />
+    </div>
+
+    <!--BAR1-->
+    <div id="BAR1" class="BAR1 masterSize posAbsolute ">
+      <img src="./images/300x250_1.png" id="BAR1_img" class="posAbsolute" />
+    </div>
+    <!--BAR2-->
+    <div id="BAR2" class="BAR2 masterSize posAbsolute hide">
+      <img src="./images/300x250_2.png" id="BAR2_img" class="posAbsolute" />
+    </div>
+    <!--BAR3-->
+    <div id="BAR3" class="BAR3 masterSize posAbsolute hide">
+      <img src="./images/300x250_3.png" id="BAR3_img" class="w100 posAbsolute" />
+    </div>
+    <!--BAR4-->
+    <div id="BAR4" class="BAR4 masterSize posAbsolute hide">
+      <img src="./images/300x250_4.png" id="BAR4_img" class="posAbsolute" />
+    </div>
+    <!--Logo Image-->
+    <div id="logo_container" class="NVlogo masterSize posAbsolute">
+      <img src="./images/NV_Logo Compressed.png" id="logo_img" class="posAbsolute w100" />
+    </div>
+    <!--Bottom Rip-->
+    <div id="WhiteRip" class="BRipe masterSize posAbsolute">
+      <img src="./images/Bottom Rip.png" id="bottomRip_img" class="posAbsolute" />
+    </div>
+    <!--CTA1-->
+    <div id="ctaBox" class="ctaBox posAbsolute">
+      <div id="cta1" class="posAbsolute pMedium">
+        SHOP NOW
+      </div>
+    </div>
+    <!--Package-->
+    <div id="pkg" class="pkg masterSize posAbsolute hide">
+      <img src="./images/300x250_pkg.png" id="pkg_img" class="posAbsolute" />
+    </div>
+    <!--Frame 5 text-->
+    <div id="text1" class="text1 copyColor masterSize posAbsolute hide">
+      <p class="text1_T lsBold " id="text1_T">Chocolate-dipped</p>
+    </div>
+    <div id="text2" class="text2 copyColor masterSize posAbsolute hide">
+      <p class="text2_T pMedium" id="text2_T">DECADENCE.</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var clickTag = 'https://www.google.com'
+    var clickArea = document.getElementById('banner')
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank")
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ad.size" content="width=300,height=250" />
+
+    <title>Johnson & Johnson</title>
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <link type="text/css" rel="stylesheet" href="fonts.css" />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+
+  <body>
+    <div id="banner" class="masterSize posAbsolute lt0">
+      <!--Logo Image-->
+      <div id="logo_container" class="logoZoom bgWhite masterSize posAbsolute">
+        <img
+          src="./images/Johnson_and_Johnson.svg"
+          id="logo_img"
+          class="posAbsolute"
+        />
+      </div>
+      <!---->
+      <div id="copy_frames" class="w100 copy_frames">
+        <!--COPY 1-->
+        <div id="copy1Box" class="copy posAbsolute lt0 w100">
+          <div id="copy1_a" class="cBold posAbsolute hide">NURSES,</div>
+          <div id="copy1_b" class="cMedium posAbsolute hide">
+            you make healthcare work
+          </div>
+        </div>
+
+        <!--COPY 2-->
+        <div id="copy2Box" class="copy posAbsolute lt0 w100">
+          <div id="copy2_a" class="posAbsolute">
+            <span id="c2a_a" class="cMedium hide">You're</span>
+            <span id="c2a_b" class="cBold hide">innovators,</span>
+          </div>
+          <div id="copy2_b" class="cMedium posAbsolute">
+            <span id="c2b_a" class="cBold hide"> leaders </span>
+            <span id="c2b_b" class="cMedium hide"> and </span>
+            <span id="c2b_c" class="cBold hide"> fierce </span>
+          </div>
+          <div id="copy2_c" class="cMedium posAbsolute">
+            <span id="c2c_a" class="cBold hide"> patient advocates </span>
+          </div>
+        </div>
+
+        <!--COPY 3-->
+        <div id="copy3Box" class="copy posAbsolute lt0 w100">
+          <div id="copy3_a" class="cMedium posAbsolute hide">Learn how</div>
+          <div id="copy3_b" class="copyLogo posAbsolute">
+            <img
+              src="./images/Johnson_and_Johnson_white.svg"
+              id="logo_img_last"
+              class="posAbsolute hide"
+            />
+          </div>
+          <div id="copy3_c" class="posAbsolute hide">
+            <span class="cMedium" id="c3c_a">supports</span>
+            <span class="cBold" id="c3c_b"> NURSES </span>
+          </div>
+          <!-- <div id="copy3_d" posAbsolute hide"> 
+                        NURSES
+                    </div> -->
+        </div>
+        <!--Logo & CTA-->
+        <div id="common_frame" class="common_frame posAbsolute lt0 w100">
+          <img
+            src="./images/Johnson_and_Johnson_white.svg"
+            id="logo_top"
+            class="w100"
+            alt="Learn More >"
+          />
+          <div id="ctaBox" class="cta posAbsolute">
+            <div id="learnMore" class="learnMore cMedium posAbsolute">
+              Learn More
+            </div>
+            <div id="cta" class="cta posAbsolute">
+              <img src="./images/cta_button.svg" class="w100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var clickTag = "https://www.google.com";
+      var clickArea = document.getElementById("banner");
+      clickArea.onclick = function () {
+        window.open(clickTag, "_blank");
+      };
+    </script>
+  </body>
+</html>

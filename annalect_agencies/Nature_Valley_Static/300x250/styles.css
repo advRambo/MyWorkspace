@@ -1,0 +1,269 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* MY CSS */
+html,
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  color: #fff;
+}
+
+html,
+.masterSize {
+  width: 300px;
+  height: 250px;
+}
+
+span {
+  display: inline-block;
+}
+
+#banner {
+  background: #145f1f;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #515151;
+  box-sizing: border-box;
+}
+
+.pMedium {
+  font-family: "PorterRegular";
+  font-size: 45.5px;
+  line-height: 1.2;
+}
+
+.lsBold {
+  font-family: "LevSerifBold";
+  font-size: 24.5px;
+}
+
+.w100 {
+  width: 100%;
+  height: auto}
+
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.hide{
+
+  opacity: 0;
+}
+
+.NVlogo {
+  top: 19px;
+  width: 83px;
+  height: auto;
+  left: 108px;
+}
+
+#stripe {
+  top: 111px;
+}
+
+.BRipe {
+  top: 209px;
+}
+
+#ctaBox {
+  background: #ffdd00;
+  width: 136px;
+  height: 38px;
+  top: 199px;
+  left: 82px;
+}
+
+#cta1 {
+  top: 13px;
+  left: 20px;
+  font-size: 17px;
+  color: #056730;
+  letter-spacing: 1.1px;
+}
+
+/* #BAR1 {
+  top: 50px;
+  left: 20px;
+} */
+
+ /* #BAR2 {
+  top: 44px;
+  left: 27px;
+}
+
+#BAR3 {
+        width: 236px;
+    top: 24px;
+    left: 9px;
+}*/
+
+/* div#pkg {
+  width: 148px;
+}
+
+img#pkg_img {
+  width: 100%;
+  top: 134px;
+  left: 4px;
+} */
+
+.copyColor {
+  color: #fcf8e4;
+}
+
+#text1 {
+  top: 57px;
+  left: 64px;
+}
+
+.text1_T{
+
+  font-size: 18.4px;
+  opacity: 0;
+}
+
+#text2 {
+  top: 86px;
+  left: 47px;
+}
+
+.text2_T{
+  opacity: 0;
+  font-size: 36.5px;
+}

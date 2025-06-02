@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="ad.size" content="width=300,height=250" />
+
+  <title>Stryker</title>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body style="visibility: hidden;">
+  <div id="banner" class="bannerSize posAbsolute lt0">
+    <!-- Frame 1 -->
+    <div id="frame1" class="posAbsolute bannerSize lt0">
+      <div id="bg1" class="posAbsolute w100 lt0">
+        <img src="./images/bg1.jpg" class="w100">
+      </div>
+      <div id="copy1" class="posAbsolute overFlowHide">
+        <img id="copyImg1" src="./images/copy1.png" class="posAbsolute">
+      </div>
+    </div>
+
+    <!-- Frame 2 -->
+    <div id=" frame2" class="posAbsolute w100 lt0">
+      <div id="bg2" class="posAbsolute w100 lt0 hide">
+        <img src="./images/bg2.jpg" class="w100">
+      </div>
+      <div id="copy2" class="posAbsolute overFlowHide">
+        <img id="copyImg2" src="./images/copy2.png" class="posAbsolute hide">
+      </div>
+    </div>
+
+    <!-- Frame 3 -->
+    <div id="frame3" class="posAbsolute w100 lt0">
+      <div id="bg3" class="posAbsolute w100 lt0 hide">
+        <img src="./images/bg3.jpg" class="w100">
+      </div>
+      <div id="copy3" class="posAbsolute overFlowHide">
+        <img id="copyImg3" src="./images/copy3.png" class="posAbsolute hide lt0">
+      </div>
+    </div>
+
+    <!-- Frame 4 -->
+    <div id=" frame4" class="posAbsolute w100 lt0">
+      <div id="bg4" class="posAbsolute w100 lt0 hide">
+        <img src="./images/bg4.jpg" class="w100">
+      </div>
+      <div id="copy4" class="posAbsolute overFlowHide">
+        <img id="copyImg4" src="./images/copy4.png" class="posAbsolute hide lt0">
+      </div>
+    </div>
+
+    <!-- Frame 5 -->
+    <div id="frame5" class="posAbsolute w100 lt0">
+      <div id="logo" class="posAbsolute w100 lt0 hide">
+        <img src="./images/logo.png" class="w100">
+      </div>
+      <div id="scanCopy" class="posAbsolute overFlowHide">
+        <img id="scanCopyImg" src="./images/scan.png" class="posAbsolute hide lt0">
+      </div>
+      <div id="planCopy" class="posAbsolute overFlowHide">
+        <img id="planCopyImg" src="./images/plan.png" class="posAbsolute hide lt0">
+      </div>
+      <div id="nycCopy" class="posAbsolute overFlowHide">
+        <img id="nycCopyImg" src="./images/now_you_can.png" class="posAbsolute hide lt0">
+        <div id="revealBox1" class="bgWhite posAbsolute w100 lt0 hide"></div>
+      </div>
+      <div id="ctaBox" class="posAbsolute hide overFlowHide">
+        <img id="ctaImg" src="./images/cta.png" class="w100">
+        <div id="ctaShine" class="w100 posAbsolute hide ctaShine lt0"></div>
+      </div>
+    </div>
+
+    <!-- Frame 6 -->
+    <div id=" frame6" class="posAbsolute w100 lt0">
+      <div id="mcCopy" class="posAbsolute overFlowHide">
+        <img id="mcCopyImg" src="./images/mako_can.png" class="posAbsolute hide lt0">
+        <div id="revealBox2" class="bgWhite posAbsolute w100 lt0 hide"></div>
+      </div>
+    </div>
+
+    <div id="legalWhite" class="posAbsolute bannerSize lt0">
+      <img src="./images/legal_white.png" class="w100">
+    </div>
+    <div id="legalBlack" class="posAbsolute bannerSize lt0 hide">
+      <img src="./images/legal_black.png" class="w100">
+    </div>
+  </div>
+  <script type="text/javascript">
+    var clickTag = "https://www.google.com";
+    var clickArea = document.getElementById("banner");
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank");
+    };
+  </script>
+</body>
+
+</html>
