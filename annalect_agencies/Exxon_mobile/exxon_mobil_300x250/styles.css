@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   RESET CSS
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************ My CSS *************/
+
+html,
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: 'FedEx-Regular', sans-serif, Helvetica, Arial;
+  font-weight: 400;
+  color: #fff;
+}
+
+html,
+.masterSize {
+  width: 300px;
+  height: 250px;
+}
+
+span {
+  display: inline-block;
+}
+
+.textC {
+  text-align: center;
+}
+
+#banner {
+  background: #eaeced;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #515151;
+  box-sizing: border-box;
+}
+
+.cRegular {
+  font-family: 'FedEx-Regular';
+  font-weight: 400;
+}
+
+.cBold {
+  font-family: 'FedEx-Bold';
+  font-weight: 700;
+}
+
+.w100 {
+  width: 100%;
+  height: 100%;
+}
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.lt0 {
+  top: 0px;
+  left: 0px;
+}
+
+div#logo {
+  width: 119px;
+  top: 205px;
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+}
+
+div#cta {
+  top: 383px;
+  left: 220px;
+  width: 240px;
+  height: 40px;
+}
+
+#ctaArrow {
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  transition: left ease-in;
+}
+
+#bgRotate {
+  width: 240px;
+  height: auto;
+  top: 7px;
+  left: 133px;
+  animation: bgRotate 90s linear 0s infinite forwards;
+}
+
+@keyframes bgRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
