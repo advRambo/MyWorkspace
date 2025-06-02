@@ -1,0 +1,327 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************ My CSS *************/
+@font-face {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  src: url(https://fonts.googleapis.com/css?family=Lato:400,700,900)
+    format('woff2');
+}
+
+html,
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: 'Lato', sans-serif, Helvetica, Arial;
+  color: #fff;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+.adSize {
+  width: 300px;
+  height: 250px;
+}
+
+span {
+  display: inline-block;
+}
+
+.textC {
+  text-align: center;
+}
+
+#banner {
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #515151;
+  box-sizing: border-box;
+}
+
+.w100 {
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.lt0 {
+  top: 0px;
+  left: 0px;
+}
+.boldFont {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+.regFont {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+#logoWhite,
+#logoBlue {
+  width: 33px;
+  height: auto;
+  top: 0;
+  left: 251px;
+}
+#text1 {
+  left: -34px;
+}
+#ctaBox {
+  background: #fff;
+  font-size: 10px;
+  top: 199px;
+  color: #001e50;
+  /* z-index: 1; */
+}
+#tc_open {
+  top: 230px;
+  left: 30px;
+  color: #fff;
+}
+#tc_open,
+#tc_close {
+  font-size: 9px;
+  z-index: 2;
+}
+#tc_open span {
+  text-decoration: underline;
+}
+#tc_close {
+  top: 10px;
+  right: 10px;
+  color: #1d1f20;
+}
+#disclaimer_container {
+  background-color: #fff;
+}
+#disclaimer_content {
+  top: 18px;
+}
+
+#disclaimer_text {
+  font-weight: lighter;
+  font-size: 10px;
+  padding: 10px;
+  color: #1d1f20;
+  line-height: 1.1;
+}
+#greyBox {
+  background-color: #cbd1cf;
+  width: 100%;
+  height: 178px;
+}
+ul#dealerList {
+  left: 25px;
+  top: 21px;
+  width: 236px;
+  color: #001e50;
+}
+
+#dealer_headline {
+  font-size: 8.5px;
+  letter-spacing: 0.28px;
+}
+#dealer_name {
+  font-weight: 900;
+  margin-top: 16px;
+  letter-spacing: 0.4px;
+}
+
+#dealer_address1,
+#dealer_address2 {
+  margin-top: 3px;
+  letter-spacing: 0.05px;
+  line-height: 1.05;
+}
+
+#dealer_name,
+#dealer_address1,
+#dealer_address2 {
+  font-size: 12px;
+}
+#dealer_phone,
+#dealer_license {
+  font-size: 9px;
+  margin-top: 4px;
+  letter-spacing: 0.2px;
+}
+#leftWheelBox,
+#rightWheelBox {
+  width: 17px;
+  top: 184px;
+}
+#leftWheelBox {
+  left: 49px;
+}
+#rightWheelBox {
+  left: 167px;
+}
+#ctaBlueBox {
+  background-color: #001e50;
+  color: #fff;
+  font-size: 10px;
+  top: 216px;
+}
+#ctaBlueBox,
+#ctaBox {
+  left: 26px;
+  padding: 7px 8px;
+  border-radius: 15px;
+}
+#exitLink {
+  z-index: 1;
+}
+#tc_open {
+  padding-bottom: 10px;
+}
+#tc_open:hover span {
+  text-decoration: none;
+}
+sup {
+  vertical-align: top;
+  display: inline-block;
+  font-size: inherit;
+  margin-top: -2px;
+}
