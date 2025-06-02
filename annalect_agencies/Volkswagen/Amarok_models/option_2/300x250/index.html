@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="ad.size" content="width=300,height=250" />
+
+  <title>Volkswagen Amarok Core</title>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body style="visibility: hidden;">
+  <div id="banner" class="adSize posAbsolute lt0">
+
+    <!-- Frame 1 -->
+    <div id="frame1" class="adSize posAbsolute lt0">
+      <div id="bg1" class="adSize posAbsolute lt0">
+        <img src="bg1.jpg" class="w100">
+      </div>
+      <div id="text1" class="adSize posAbsolute">
+        <img src="text1.png" class="w100">
+      </div>
+    </div>
+    <!-- Frame 2 -->
+    <div id="frame2" class="adSize posAbsolute lt0 ">
+      <div id="bg2" class="posAbsolute w100 lt0">
+        <img src="bg2.jpg" class="w100">
+      </div>
+      <div id="text2" class="posAbsolute w100">
+        <img src="text2.png" class="w100">
+      </div>
+      <!-- <div id="price" class="posAbsolute w100">
+        <img src="price.png" class="w100">
+      </div> -->
+    </div>
+
+    <!-- Frame 3 -->
+    <div id="frame3" class="adSize posAbsolute lt0">
+      <div id="bg3" class="adSize posAbsolute w100 lt0">
+        <img src="bg1.jpg" class="w100">
+      </div>
+      <div id="text3" class="posAbsolute w100">
+        <img src="text3.png" class="w100">
+      </div>
+    </div>
+
+    <!-- Frame 4 -->
+    <div id="frame4" class="adSize posAbsolute lt0">
+      <div id="frame4Box" class="posAbsolute lt0"></div>
+      <!-- dealer -->
+      <div id=" dealerContent" class="adSize posAbsolute lt0">
+        <ul id="dealerList" class="regFont posAbsolute">
+          <li id="dealer_headline"> Your Volkswagen Dealer </li>
+          <li id="dealer_name"> Testing Longest Volkswagen Dealership </li>
+          <li id="dealer_address1"> Corner of Transporter Drive </li>
+          <li id="dealer_address2"> and Passat Road, Amarok City </li>
+          <li id="dealer_phone"> 1234 444 999 </li>
+          <li id="dealer_license"> DL1234567 </li>
+        </ul>
+      </div>
+      <div id="carDiv" class="adSize posAbsolute">
+        <img src="car.png" class="w100">
+      </div>
+      <div id="leftWheelBox" class="car_wheel_container posAbsolute">
+        <img id="leftWheel" class="w100" src="front_wheel.png" />
+      </div>
+      <div id="rightWheelBox" class="car_wheel_container posAbsolute">
+        <img id="rightWheel" class="w100" src="rear_wheel.png" />
+      </div>
+    </div>
+    <!-- Common Elements -->
+    <div id="commonElements" class="adSize posAbsolute lt0">
+      <div id="logoWhite" class="posAbsolute lt0">
+        <img src="logo_white.png" class="w100">
+      </div>
+      <div id="logoBlue" class="posAbsolute lt0">
+        <img src="logo_blue.png" class="w100">
+      </div>
+
+      <!-- T&Cs -->
+      <div id="legalBox" class="adSize posAbsolute">
+        <div id="disclaimer_container" class="adSize posAbsolute">
+          <div id="disclaimer_content" class="posAbsolute">
+            <p id="disclaimer_text" class="regFont">
+              +~#Offer ends June 30. Private buyers only/Excludes Government, fleet and rental buyers. While stocks
+              last. Model
+              exclusions, conditions and fees apply. Visit Volkswagen.com.au for full T&Cs.
+            </p>
+          </div>
+        </div>
+        <div id="exitLink" class="adSize posAbsolute lt0"></div>
+        <a id="tc_close" class="regFont posAbsolute" href="#">Close T&Cs</a>
+
+        <div id="tc_open" class="regFont posAbsolute" href="#"><sup>*&nbsp;</sup><span>View T&Cs</span></div>
+        <div id="ctaBox" class="ctaCommon posAbsolute exitLink">
+          <div id="transparentBlack" class="w100 posAbsolute lt0"></div>
+          <div id="ctaCopy">Book a test drive</div>
+        </div>
+        <div id="ctaBlueBox" class="ctaCommon posAbsolute">
+          <div id="transparentBlack2" class="w100 posAbsolute lt0"></div>
+          <div id="ctaWhiteCopy">Book a test drive</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var clickTag = "https://www.google.com";
+    var clickArea = document.getElementById("exitLink");
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank");
+    };
+  </script>
+</body>
+
+</html>

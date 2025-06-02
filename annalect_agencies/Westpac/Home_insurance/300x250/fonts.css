@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'NunitoSansLight';
+  src: url('subset-NunitoSans10pt-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('subset-Gotham-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NunitoSansBold';
+  src: url('subset-NunitoSans10pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WestpacBold';
+  src: url('subset-Westpac-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

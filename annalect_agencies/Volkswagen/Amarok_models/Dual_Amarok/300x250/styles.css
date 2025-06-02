@@ -1,0 +1,368 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************ My CSS *************/
+@font-face {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  src: url(https://fonts.googleapis.com/css?family=Lato:400,700,900)
+    format('woff2');
+}
+
+html,
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: 'Lato', sans-serif, Helvetica, Arial;
+  color: #fff;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+.adSize {
+  width: 300px;
+  height: 250px;
+}
+
+span {
+  display: inline-block;
+}
+
+.textC {
+  text-align: center;
+}
+
+#banner {
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #515151;
+  box-sizing: border-box;
+}
+
+.w100 {
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.lt0 {
+  top: 0px;
+  left: 0px;
+}
+.boldFont {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+.regFont {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+#logoBlue {
+  width: 510px;
+  top: 205.5px;
+  left: -210px;
+}
+
+#tc_open {
+  top: 230px;
+  left: 15px;
+  color: #001e50;
+}
+#tc_open,
+#tc_close {
+  font-size: 9px;
+  z-index: 2;
+}
+#tc_open span {
+  border-bottom: 1px solid #001e50;
+  padding-bottom: 1px;
+}
+
+#tc_close {
+  top: 10px;
+  right: 10px;
+  color: #1d1f20;
+}
+#disclaimer_container {
+  background-color: #fff;
+}
+#disclaimer_content {
+  top: 18px;
+}
+#frame4box {
+  width: 300px;
+  height: 100px;
+  background-color: #9ea2a8;
+}
+#disclaimer_text {
+  font-weight: lighter;
+  font-size: 10px;
+  padding: 10px;
+  color: #1d1f20;
+  line-height: 1.2;
+}
+ul#dealerList {
+  left: 13px;
+  top: 17px;
+  width: 236px;
+  color: #001e50;
+}
+
+#dealer_headline {
+  font-size: 9.5px;
+  letter-spacing: -0.12px;
+}
+#dealer_name {
+  font-weight: 900;
+  margin-top: 10px;
+  letter-spacing: -0.1px;
+}
+
+#dealer_address1,
+#dealer_address2 {
+  margin-top: 4px;
+}
+
+#dealer_name,
+#dealer_address1,
+#dealer_address2 {
+  letter-spacing: 0.15px;
+}
+#dealer_name,
+#dealer_address1,
+#dealer_address2 {
+  font-size: 12.5px;
+}
+
+#dealer_phone,
+#dealer_license {
+  font-size: 9px;
+  margin-top: 3px;
+  letter-spacing: 0.2px;
+}
+#leftWheelCar1 {
+  top: 148.5px;
+  left: 82.5px;
+  width: 27px;
+}
+#rightWheelCar1 {
+  top: 142px;
+  left: 145px;
+  width: 18px;
+}
+#leftWheelCar2 {
+  top: 152.5px;
+  left: 174px;
+  width: 26px;
+}
+#rightWheelCar2 {
+  top: 145.5px;
+  left: 236px;
+  width: 19px;
+}
+
+#leftWheelBox1 {
+  top: 154px;
+  left: 151.5px;
+  width: 16.5px;
+}
+#rightWheelBox1 {
+  top: 154px;
+  left: 250px;
+  width: 16.5px;
+}
+#leftWheelBox2 {
+  top: 190px;
+  left: 89.7px;
+  width: 19.3px;
+}
+#rightWheelBox2 {
+  top: 190px;
+  left: 200px;
+  width: 19.3px;
+  transform: rotate(276deg);
+}
+#ctaBox,
+#ctaBlueBox {
+  font-size: 11px;
+  color: #fff;
+  overflow: hidden;
+  top: 117.5px;
+  left: 14px;
+}
+#ctaBlueBox {
+  padding: 8px 12px;
+  background-color: #00b0f0;
+}
+#ctaBox {
+  color: #fff;
+  background-color: #00b0f0;
+}
+#ctaBlueBox,
+#ctaBox {
+  padding: 8px 12px;
+  border-radius: 15px;
+}
+#exitLink {
+  z-index: 1;
+}
+#tc_open {
+  padding-bottom: 10px;
+}
+#tc_open:hover span {
+  border: none;
+}
+sup {
+  vertical-align: top;
+  display: inline-block;
+  font-size: inherit;
+  margin-top: -1px;
+}
+#bg1 {
+  top: -10px;
+}
+#logoBlueSide {
+  top: -244px;
+  width: 33px;
+  left: 257px;
+}
